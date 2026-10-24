@@ -1,0 +1,25 @@
+set(USER_MODULE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/fonts/font_gpu_assets.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/fonts/lv_font_notosans_14.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/fonts/lv_font_notosans_16.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/fonts/lv_font_notosans_20.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/fonts/lv_font_notosans_24.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_debug.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_deferred.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_detail.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_fonts.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_model.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_styles.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_teaching.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui_widgets.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/screens/scr_descriptors.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/screens/scr_events.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/screens/scr_home.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/screens/scr_wifi.c"
+    PARENT_SCOPE
+)
+set(USER_MODULE_INCLUDE_DIRS
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    PARENT_SCOPE
+)

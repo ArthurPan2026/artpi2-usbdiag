@@ -1,0 +1,13 @@
+set(USER_MODULE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/usb_desc_parser.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/usb_descriptor_store.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/usb_evidence.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/usb_evidence_wrapper.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/usb_hal_compat.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/usb_host_port.c"
+    PARENT_SCOPE
+)
+set(USER_MODULE_INCLUDE_DIRS
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    PARENT_SCOPE
+)

@@ -1,0 +1,13 @@
+from building import *
+
+cwd = GetCurrentDir()
+src = ['src/wifi_profile_manager.c']
+if GetDepend('PKG_USING_WIFI_PROFILE_MANAGER_NV'):
+    src += ['src/wpm_nv_journal.c']
+if GetDepend('WPM_BUILD_EXAMPLE'):
+    src += ['examples/wifi_profile_manager_example.c']
+
+group = DefineGroup('wifi_profile_manager', src,
+                    depend=['PKG_USING_WIFI_PROFILE_MANAGER'],
+                    CPPPATH=[cwd + '/include'])
+Return('group')

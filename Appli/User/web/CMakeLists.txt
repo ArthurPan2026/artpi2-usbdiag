@@ -1,0 +1,11 @@
+set(USER_MODULE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/mongoose_service.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/web_server.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/web_pdf_report.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/web_snapshot.c"
+    PARENT_SCOPE
+)
+set(USER_MODULE_INCLUDE_DIRS
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    PARENT_SCOPE
+)

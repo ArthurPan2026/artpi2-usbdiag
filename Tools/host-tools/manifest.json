@@ -1,0 +1,406 @@
+{
+  "format_version": 2,
+  "platform": "windows-x64",
+  "tools": {
+    "ninja": {
+      "id": "ninja-1.13.2-windows-x86_64",
+      "version": "1.13.2",
+      "path": "ninja-1.13.2-win.7z",
+      "bytes": 230502,
+      "sha256": "1e4f07edca8f66163bde791ed1da010e9d2d52de435ab29656ee493310a8706e",
+      "archive_format": "7z",
+      "source_url": "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-win.zip",
+      "source_zip_bytes": 291570,
+      "source_zip_sha256": "07fc8261b42b20e71d1720b39068c2e14ffcee6396b76fb7a795fb460b78dc65",
+      "expanded_bytes": 615006,
+      "archive_license_paths": [],
+      "package_license_paths": [
+        "licenses/Ninja-COPYING.txt"
+      ]
+    },
+    "cmake": {
+      "id": "cmake-4.1.1-windows-x86_64",
+      "version": "4.1.1",
+      "path": "cmake-4.1.1-windows-x86_64.7z",
+      "bytes": 20029617,
+      "sha256": "aafeae3f615e987ede047eff17f38e9fe1c3ceb419eaa364e88d4614156d365f",
+      "archive_format": "7z",
+      "source_url": "https://github.com/Kitware/CMake/releases/download/v4.1.1/cmake-4.1.1-windows-x86_64.zip",
+      "source_zip_bytes": 48627947,
+      "source_zip_sha256": "6f531bd4ba31a7aa0c3511082b544d306df50e7aecfbeef8bdbc1dd770736993",
+      "expanded_bytes": 127371212,
+      "archive_license_paths": [
+        "doc/cmake/LICENSE.rst"
+      ],
+      "package_license_paths": [
+        "licenses/CMake-BSD-3-Clause.txt"
+      ],
+      "archive_root": "cmake-4.1.1-windows-x86_64"
+    },
+    "gnu_arm": {
+      "id": "arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi",
+      "version": "13.3.1",
+      "path": "arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi.7z",
+      "bytes": 82851471,
+      "sha256": "943a5e76912f674a459d11d9df0974d460bff25f3a5c99f9ba882129176cad64",
+      "archive_format": "7z",
+      "source_url": "https://developer.arm.com/-/media/Files/downloads/gnu/13.3.rel1/binrel/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi.zip",
+      "source_zip_bytes": 297871203,
+      "source_zip_sha256": "e46fda043c0ce83582bc8db4b3ef85f77f4beb7333344c2f4193c17e1167a095",
+      "expanded_bytes": 1201039889,
+      "archive_license_paths": [
+        "share/doc/gcc/Copying.html",
+        "share/doc/annotate/GNU-Free-Documentation-License.html",
+        "share/doc/cpp/GNU-Free-Documentation-License.html",
+        "share/doc/gcc/GNU-Free-Documentation-License.html",
+        "share/doc/gccint/Copying.html",
+        "share/doc/gccint/GNU-Free-Documentation-License.html",
+        "share/doc/gdb/Copying.html",
+        "share/doc/gdb/GNU-Free-Documentation-License.html",
+        "share/doc/gfortran/Copying.html",
+        "share/doc/gfortran/GNU-Free-Documentation-License.html",
+        "share/doc/stabs/GNU-Free-Documentation-License.html"
+      ],
+      "package_license_paths": [
+        "licenses/Arm-GNU-Toolchain/gcc-Copying.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/annotate/GNU-Free-Documentation-License.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/cpp/GNU-Free-Documentation-License.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gcc/Copying.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gcc/GNU-Free-Documentation-License.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gccint/Copying.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gccint/GNU-Free-Documentation-License.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gdb/Copying.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gdb/GNU-Free-Documentation-License.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gfortran/Copying.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/gfortran/GNU-Free-Documentation-License.html",
+        "licenses/Arm-GNU-Toolchain/components/share/doc/stabs/GNU-Free-Documentation-License.html",
+        "licenses/Arm-GNU-Toolchain/arm-gnu-toolchain-src-snapshot-13.3.rel1-manifest.txt",
+        "licenses/Arm-GNU-Toolchain/Arm-GNU-Toolchain-13.3.rel1-EULA.md"
+      ],
+      "archive_root": "arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi",
+      "release": "13.3.Rel1",
+      "source_archive": {
+        "path": "sources/arm-gnu-toolchain-src-snapshot-13.3.rel1.tar.xz",
+        "bytes": 311296788,
+        "sha256": "8fd5babbe95a02e82aa4cdbbd8a96ad4adac07fb1b03e8cdba86755d36370a90",
+        "source_url": "https://gitlab.arm.com/api/v4/projects/tooling%2Fgnu-toolchains-for-arm/packages/generic/gnu-toolchain/13.3.rel1/arm-gnu-toolchain-src-snapshot-13.3.rel1.tar.xz",
+        "official_sha256_url": "https://gitlab.arm.com/api/v4/projects/tooling%2Fgnu-toolchains-for-arm/packages/generic/gnu-toolchain/13.3.rel1/arm-gnu-toolchain-src-snapshot-13.3.rel1.tar.xz.sha256asc",
+        "official_sha256_file": "sources/arm-gnu-toolchain-src-snapshot-13.3.rel1.tar.xz.sha256asc",
+        "official_sha256": "8fd5babbe95a02e82aa4cdbbd8a96ad4adac07fb1b03e8cdba86755d36370a90",
+        "source_manifest": {
+          "path": "licenses/Arm-GNU-Toolchain/arm-gnu-toolchain-src-snapshot-13.3.rel1-manifest.txt",
+          "bytes": 681,
+          "sha256": "df66e495c31d98e3c6a5b3004aaf30a62a8c42d7127f236dbdda9d90c6cd214f",
+          "source_url": "https://gitlab.arm.com/api/v4/projects/tooling%2Fgnu-toolchains-for-arm/packages/generic/gnu-toolchain/13.3.rel1/arm-gnu-toolchain-src-snapshot-13.3.rel1-manifest.txt"
+        },
+        "eula": {
+          "path": "licenses/Arm-GNU-Toolchain/Arm-GNU-Toolchain-13.3.rel1-EULA.md",
+          "bytes": 1256854,
+          "sha256": "f625e9c49c44c6c508cde1a5f148029b136a35a1fc1d607172a2028a5dfa2f8b",
+          "source_url": "https://gitlab.arm.com/api/v4/projects/10698/repository/files/EULA.md/raw?ref=releases%2F13.3.rel1"
+        }
+      }
+    },
+    "cube_programmer": {
+      "id": "stm32cubeprogrammer-2.23.0-win-x64",
+      "version": "2.23.0",
+      "path": "Tools/CubeProgrammer",
+      "bytes": 60530376,
+      "sha256": "9efe9569fee0fc927f0c54195247917d2242acba6ec107afa4f502e90b8ab195",
+      "archive_format": "directory",
+      "expanded_bytes": 60530376,
+      "runtime_manifest": "Tools/CubeProgrammer/runtime-manifest.json",
+      "runtime_manifest_bytes": 64031,
+      "runtime_manifest_sha256": "9efe9569fee0fc927f0c54195247917d2242acba6ec107afa4f502e90b8ab195",
+      "source_url": "https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.sw-versions-nli.html",
+      "source_format": "validated-installed-directory",
+      "source_tree_bytes": 113867583,
+      "source_tree_sha256": "b45f00eeb1504e936536f94fab064769b0d660c8f40223d0bbafe90a50c96808",
+      "source_archive": {
+        "name": "SetupSTM32CubeProgrammer_win64.zip",
+        "bytes": 195728377,
+        "sha256": "e3d0cd91c646a4b947045d05876ee0c9b6ae2b04b5646f888d5d3437864ee76a",
+        "inner_installer_sha256": "320a0257bbb9c6d77d1368b68fa57746584156219061d9120ff230961c85068f"
+      },
+      "runtime_license_paths": [
+        "doc/license.txt",
+        "doc/STM32CubeProgrammer-2.23.0-Additional-License-Terms.txt"
+      ],
+      "removed_optional_paths": [
+        "bin/JLink_x64.dll",
+        "bin/ExternalLoader/**",
+        "doc/License_Segger_JLink.txt"
+      ]
+    }
+  },
+  "drivers": {
+    "st_link": {
+      "format_version": 1,
+      "id": "stsw-link009",
+      "version": "2.02",
+      "source_url": "https://www.st.com/en/development-tools/stsw-link009.html",
+      "archive_file": "stsw-link009.zip",
+      "archive_format": "zip",
+      "archive_bytes": 5329298,
+      "archive_sha256": "df015c7760f974e9da0f4c5a098d62c72157ea45cd0e80694eb47ab7ef28352b",
+      "install_inf_paths": [
+        "stlink_dbg_winusb.inf",
+        "stlink_VCP.inf",
+        "stlink_bridge_winusb.inf"
+      ],
+      "x64_catalog_paths": [
+        "stlinkdbgwinusb_x64.cat",
+        "stlinkvcp_x64.cat",
+        "stlinkbridgewinusb_x64.cat"
+      ],
+      "hardware_ids": [
+        "USB\\VID_0483&PID_3748",
+        "USB\\VID_0483&PID_374A&MI_00",
+        "USB\\VID_0483&PID_374A&MI_01",
+        "USB\\VID_0483&PID_374A&MI_02",
+        "USB\\VID_0483&PID_374B&MI_00",
+        "USB\\VID_0483&PID_374B&MI_02",
+        "USB\\VID_0483&PID_374D",
+        "USB\\VID_0483&PID_374E&MI_00",
+        "USB\\VID_0483&PID_374E&MI_02",
+        "USB\\VID_0483&PID_374F&MI_00",
+        "USB\\VID_0483&PID_374F&MI_02",
+        "USB\\VID_0483&PID_374F&MI_04",
+        "USB\\VID_0483&PID_3752&MI_00",
+        "USB\\VID_0483&PID_3752&MI_01",
+        "USB\\VID_0483&PID_3753&MI_00",
+        "USB\\VID_0483&PID_3753&MI_01",
+        "USB\\VID_0483&PID_3753&MI_03",
+        "USB\\VID_0483&PID_3753&MI_04",
+        "USB\\VID_0483&PID_3754&MI_00",
+        "USB\\VID_0483&PID_3754&MI_01",
+        "USB\\VID_0483&PID_3755",
+        "USB\\VID_0483&PID_3757&MI_00",
+        "USB\\VID_0483&PID_3757&MI_01",
+        "USB\\VID_0483&PID_3757&MI_03",
+        "USB\\VID_0483&PID_3757&MI_04"
+      ],
+      "files": [
+        {
+          "path": "amd64/WdfCoInstaller01009.dll",
+          "bytes": 1721576,
+          "sha256": "18487b4ff94edccc98ed59d9fca662d4a1331c5f1e14df8db3093256dd9f1c3e"
+        },
+        {
+          "path": "amd64/winusbcoinstaller2.dll",
+          "bytes": 1002728,
+          "sha256": "981a17effddbc20377512ddaec9f22c2b7067e17a3e2a8ccf82bb7bb7b2420b6"
+        },
+        {
+          "path": "dpinst_amd64.exe",
+          "bytes": 680440,
+          "sha256": "b6bae3bb8fe8dee5db004965bbea0466bab7bb4b4193e8fa544abf47f03562a5"
+        },
+        {
+          "path": "dpinst_x86.exe",
+          "bytes": 552328,
+          "sha256": "0af038b08f84604d2805202b5429210c5ef37f23623b8dae2bd8921e4e76a0c8"
+        },
+        {
+          "path": "readme.txt",
+          "bytes": 364,
+          "sha256": "9565b5815bcadab8a8cabf9c1a5b0fe277ae62e961ffec3a1d800514a2b02cf8"
+        },
+        {
+          "path": "stlinkbridgewinusb_x64.cat",
+          "bytes": 12339,
+          "sha256": "25093d0fd0a51a5b735d5da236fbb38704e4eeb5c035c5ba79cf94cf45080daf"
+        },
+        {
+          "path": "stlinkbridgewinusb_x86.cat",
+          "bytes": 12338,
+          "sha256": "cf93d88b9e7b84bce01db9ae5ff62d5390aa18538cf895773e7c4765dbb83cc9"
+        },
+        {
+          "path": "stlinkdbgwinusb_x64.cat",
+          "bytes": 12332,
+          "sha256": "57dddb5f1b4e7b22d0ed2d37fc31e06bcee0ae5d956975693550563d347638a0"
+        },
+        {
+          "path": "stlinkdbgwinusb_x86.cat",
+          "bytes": 12332,
+          "sha256": "5de4ab39be95d4064b10e668d9a6c23589c6fc104743b2868be6a92a08ee37f3"
+        },
+        {
+          "path": "stlinkvcp_x64.cat",
+          "bytes": 10694,
+          "sha256": "0e8510316270a5a46fd925b2b01d2c104406d4c98f42d2f2000a5e90257bf9e5"
+        },
+        {
+          "path": "stlinkvcp_x86.cat",
+          "bytes": 10695,
+          "sha256": "c0e7ea851bba63a840eb52fccd7966adfef9a54eedb5d96850eee02d91ba3782"
+        },
+        {
+          "path": "stlink_bridge_winusb.inf",
+          "bytes": 2965,
+          "sha256": "3a97705bc06a90e90cc12224127d2838f21fb2954c1b6b14314cc7937469e270"
+        },
+        {
+          "path": "stlink_dbg_winusb.inf",
+          "bytes": 4715,
+          "sha256": "8f4fc247f28503300cef0e4fd2ba1ff87ecb35790a152da072f8c8451255bd61"
+        },
+        {
+          "path": "stlink_VCP.inf",
+          "bytes": 2915,
+          "sha256": "a7faff1014716865e5d7458977ac94b95295108558fee0c830f984f23942c33d"
+        },
+        {
+          "path": "stlink_winusb_install.bat",
+          "bytes": 624,
+          "sha256": "3cac4f4ff8291d7a86b6f1bfc0c396915f62a8d24f7b7ffe0c8895f01aa6c5f5"
+        },
+        {
+          "path": "stlink_winusb_install_quiet.bat",
+          "bytes": 630,
+          "sha256": "b889f7d38740188e46beab9029cae4c035f47be36cdeee89e5f8332e9c0ec95e"
+        },
+        {
+          "path": "x86/WdfCoInstaller01009.dll",
+          "bytes": 1461992,
+          "sha256": "7a6bf1f950684381205c717a51af2d9c81b203cb1f3db0006a4602e2df675c77"
+        },
+        {
+          "path": "x86/winusbcoinstaller2.dll",
+          "bytes": 851176,
+          "sha256": "ebe3b7708dd974ee87efed3113028d266af87ca8dbae77c47c6f7612824d3d6c"
+        }
+      ],
+      "package_license_paths": [
+        "licenses/STSW-LINK009-SLA0048.txt"
+      ],
+      "license_document": {
+        "path": "licenses/STSW-LINK009-SLA0048.txt",
+        "bytes": 5549,
+        "sha256": "704a3788d4ab8415c7a24c24f2b2c829f7e21677b185344ed3a91442e09f0168",
+        "source": "SLA0048 Rev4/March 2018, also supplied with the locked STM32CubeProgrammer bundle"
+      }
+    }
+  },
+  "extractor": {
+    "seven_zip": {
+      "version": "26.03",
+      "files": [
+        {
+          "path": "7zip/7z.exe",
+          "bytes": 577536,
+          "sha256": "6ee3c0ed0b27663c1b948ae85a7c0bb073aed1498983182f3f0df1f6a8c30b2f",
+          "version": "26.03"
+        },
+        {
+          "path": "7zip/7z.dll",
+          "bytes": 1906688,
+          "sha256": "65e4c1f855f9ef6e8f0f5df8e3f27d9eb5f07311408639da0a1ca0b8f4871b0d",
+          "version": "26.03"
+        },
+        {
+          "path": "7zip/License.txt",
+          "bytes": 6031,
+          "sha256": "519ac0a4bded9c18ea02e0afb71f663d8c47373bd9facd3ac96a79f51d77765d",
+          "version": "26.03"
+        }
+      ],
+      "package_license_paths": [
+        "7zip/License.txt"
+      ]
+    }
+  },
+  "license_documents": [
+    {
+      "path": "7zip/License.txt",
+      "bytes": 6031,
+      "sha256": "519ac0a4bded9c18ea02e0afb71f663d8c47373bd9facd3ac96a79f51d77765d"
+    },
+    {
+      "path": "licenses/CMake-BSD-3-Clause.txt",
+      "bytes": 1526,
+      "sha256": "21983fed1322496b2e203dc486098903a828b3596fc447f0bc3999217a247a79"
+    },
+    {
+      "path": "licenses/Ninja-COPYING.txt",
+      "bytes": 11358,
+      "sha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea"
+    },
+    {
+      "path": "licenses/STSW-LINK009-SLA0048.txt",
+      "bytes": 5549,
+      "sha256": "704a3788d4ab8415c7a24c24f2b2c829f7e21677b185344ed3a91442e09f0168"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/gcc-Copying.html",
+      "bytes": 40252,
+      "sha256": "96974934d8862a870b774a5af4486a99c6a6cebbc00084e9373749f4a54cb39a"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/annotate/GNU-Free-Documentation-License.html",
+      "bytes": 27434,
+      "sha256": "a21047f6572043108d1b38488ba5f87cee679cfde05979cb116801acb0844bb0"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/cpp/GNU-Free-Documentation-License.html",
+      "bytes": 28243,
+      "sha256": "cc63f581d736858124b37f8db31ff2803813ab71090ea432c92af9490ad75280"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gcc/Copying.html",
+      "bytes": 40252,
+      "sha256": "96974934d8862a870b774a5af4486a99c6a6cebbc00084e9373749f4a54cb39a"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gcc/GNU-Free-Documentation-License.html",
+      "bytes": 28209,
+      "sha256": "6928ecb84f29737eba88b05412a8acc50abb37f029103ee0f86e2935fce387a9"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gccint/Copying.html",
+      "bytes": 40218,
+      "sha256": "b1d42a58b291615ab4ede14af5d24676afb991a1c565b09f52e958e354b52abd"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gccint/GNU-Free-Documentation-License.html",
+      "bytes": 28175,
+      "sha256": "15cbdc984eabd98d4b90df29ba47de62bfacfb6e81e92eee21bc58083204fa6c"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gdb/Copying.html",
+      "bytes": 40040,
+      "sha256": "37a1c5461f5867222a60851975f7c285a5da5631dbd3f664bfc73fd583e88a68"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gdb/GNU-Free-Documentation-License.html",
+      "bytes": 27927,
+      "sha256": "4d35e7234329167875a745ea24076c35597e70739a4b1726146ae1d9ed7d32ff"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gfortran/Copying.html",
+      "bytes": 40173,
+      "sha256": "52a146d9ef4575ecface72a138f235b5172ad85d1e67591a9731a15ca2f2875e"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/gfortran/GNU-Free-Documentation-License.html",
+      "bytes": 28102,
+      "sha256": "1ae50e809fb1b9eb22ac6579feb92e9894dc596aafb598862b2d6061b42bee33"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/components/share/doc/stabs/GNU-Free-Documentation-License.html",
+      "bytes": 27886,
+      "sha256": "6234c1fd5bbe536befd2499ad5f6a17428680015e595492b54164e24cd7d2e40"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/arm-gnu-toolchain-src-snapshot-13.3.rel1-manifest.txt",
+      "bytes": 681,
+      "sha256": "df66e495c31d98e3c6a5b3004aaf30a62a8c42d7127f236dbdda9d90c6cd214f"
+    },
+    {
+      "path": "licenses/Arm-GNU-Toolchain/Arm-GNU-Toolchain-13.3.rel1-EULA.md",
+      "bytes": 1256854,
+      "sha256": "f625e9c49c44c6c508cde1a5f148029b136a35a1fc1d607172a2028a5dfa2f8b"
+    }
+  ]
+}

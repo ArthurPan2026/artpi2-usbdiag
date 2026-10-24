@@ -1,0 +1,47 @@
+menuconfig PKG_USING_WIFI_PROFILE_MANAGER
+    bool "Portable Wi-Fi profile manager core"
+    default n
+    help
+      Bounded C99 Wi-Fi profile and connection policy core. Radio and
+      persistence operations are executed by the application adapter.
+
+if PKG_USING_WIFI_PROFILE_MANAGER
+
+    config PKG_WIFI_PROFILE_MANAGER_PATH
+        string
+        default "/packages/iot/wifi_profile_manager"
+
+    choice
+        prompt "Version"
+        default PKG_USING_WIFI_PROFILE_MANAGER_V010
+        help
+          Select a fixed wifi_profile_manager package version.
+
+        config PKG_USING_WIFI_PROFILE_MANAGER_V010
+            bool "v0.1.0"
+    endchoice
+
+    config PKG_WIFI_PROFILE_MANAGER_VER
+        string
+        default "v0.1.0" if PKG_USING_WIFI_PROFILE_MANAGER_V010
+
+    config WPM_PROFILE_MAX
+        int "Maximum saved Wi-Fi profiles"
+        range 1 8
+        default 8
+
+    config PKG_USING_WIFI_PROFILE_MANAGER_NV
+        bool "Transactional profile persistence journal"
+        default n
+        help
+          Enable the optional allocation-free two-sector journal for opaque
+          profile payloads. The application must provide read, 16-byte
+          program, and sector erase callbacks plus the storage geometry.
+          The module does not access hardware or encrypt credentials.
+
+    config WPM_BUILD_EXAMPLE
+        bool "Build adapter boundary smoke example"
+        depends on RT_USING_COMPONENTS_INIT
+        default n
+
+endif

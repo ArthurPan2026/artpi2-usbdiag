@@ -1,0 +1,13 @@
+set(USER_MODULE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/rtthread_app.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/rtthread_console_uart4.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/rtthread_startup.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/rtthread_systick.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/rtthread_uart4_device.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/startup_coordinator.c"
+    PARENT_SCOPE
+)
+set(USER_MODULE_INCLUDE_DIRS
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    PARENT_SCOPE
+)

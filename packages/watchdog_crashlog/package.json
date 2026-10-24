@@ -1,0 +1,23 @@
+{
+  "name": "watchdog_crashlog",
+  "description": "Portable C99 watchdog fault and event record core with a fixed 4 KiB v2 record layout.",
+  "description_zh": "固定 4 KiB v2 记录布局的可移植 C99 看门狗故障与事件记录核心。",
+  "enable": "PKG_USING_WATCHDOG_CRASHLOG",
+  "keywords": [
+    "watchdog",
+    "fault-record",
+    "crashlog",
+    "C99"
+  ],
+  "category": "peripherals",
+  "license": "Apache-2.0",
+  "repository": "PENDING_PUBLIC_REPOSITORY_URL",
+  "homepage": "PENDING_PUBLIC_PROJECT_URL",
+  "site": [
+    {
+      "version": "v0.1.0",
+      "URL": "PENDING_PUBLIC_V0_1_0_ARCHIVE_URL",
+      "filename": "watchdog_crashlog-v0.1.0.zip"
+    }
+  ]
+}

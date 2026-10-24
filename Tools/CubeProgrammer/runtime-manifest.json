@@ -1,0 +1,1828 @@
+{
+  "format_version": 1,
+  "id": "stm32cubeprogrammer-2.23.0-win-x64",
+  "version": "2.23.0",
+  "platform": "windows-x64",
+  "executable": "bin/STM32_Programmer_CLI.exe",
+  "file_count": 362,
+  "expanded_bytes": 60530376,
+  "source_tree_bytes": 113867583,
+  "source_tree_sha256": "b45f00eeb1504e936536f94fab064769b0d660c8f40223d0bbafe90a50c96808",
+  "files": [
+    {
+      "path": "bin/DA_Default_Config/STM32G5/Crypto/DA_Config_Certificate.obk",
+      "bytes": 204,
+      "sha256": "99c99ab3376f0539a2b9539ee81777cbafd4cab1a500cf218f36d432401358bc"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32G5/Crypto/DA_Config_Password.obk",
+      "bytes": 204,
+      "sha256": "4813c61e0f0c36944fa56e1f275ae54e9c3858881047dee88c0b0ee5d1b95b13"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32G5/DA_cert.b64",
+      "bytes": 296,
+      "sha256": "48a0071d2fcb0ead3fe082fb9ebaf79527ecc72fbb5d0a6a6441c3530d5ece7e"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32G5/key_3_leaf.pem",
+      "bytes": 241,
+      "sha256": "d8617a54b88c6061f310d75b66d6319e9b87212a8f53401f039067f9aa520894"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32G5/Non-Crypto/DA_Config_Certificate.obk",
+      "bytes": 204,
+      "sha256": "b72b858bd9346524caa7889e90253ae5f0e4021fda8b2bb8f124dc039df1cd18"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32G5/Non-Crypto/DA_Config_Password.obk",
+      "bytes": 204,
+      "sha256": "2229525cb7e9057930eaacf9aad73a14cf87da57149219eaa231f5cd0eae0bbf"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32G5/password.bin",
+      "bytes": 24,
+      "sha256": "774e73f4c0ec7f9617da41405b0eb02d560ea498af8717de91b411203d1af499"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H5/cert_leaf_chain.b64",
+      "bytes": 880,
+      "sha256": "d21811a12f5533f474901f2bec27ae4c85c76a4968394e221edc55f4c291ac0a"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H5/Crypto/DA_Config_Certificate.obk",
+      "bytes": 108,
+      "sha256": "72d78f18f82fd46085c0d298ac5af4b9469a68f1965ff82cbe2115120c4b8adc"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H5/Crypto/DA_Config_Password.obk",
+      "bytes": 108,
+      "sha256": "8e2c4952b9e1d5618a0e42349065be1127a006cf970dd18c993282d03146f769"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H5/key_3_leaf.pem",
+      "bytes": 246,
+      "sha256": "2b19ce25346cb10fd2294f29f79b83e5d8f63952868bec4529f0b29fda5fc60a"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H5/NonCrypto/DA_Config_Certificate.obk",
+      "bytes": 108,
+      "sha256": "2cafcf533300aebe1ebaaa2b6bd6e99c3502ef88acd668b2d41f910515527862"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H5/NonCrypto/DA_Config_Password.obk",
+      "bytes": 108,
+      "sha256": "f4d40b1b669a635e15719eaf0f6fd9f7b5494e3616a6337d2c350eca7f2d4547"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H5/password.bin",
+      "bytes": 24,
+      "sha256": "774e73f4c0ec7f9617da41405b0eb02d560ea498af8717de91b411203d1af499"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H7P/DA_Config.obk",
+      "bytes": 108,
+      "sha256": "4fc48e9a3cf18fd41a53ae8b80cab254ec03dc4feb9f9d83942df47ffaa320fc"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H7P/password.bin",
+      "bytes": 24,
+      "sha256": "312e868eea5e58c8751a4d89486a99d050f3716d484ecfe39b97c51c4513f8f5"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H7RS/cert_leaf_chain.b64",
+      "bytes": 880,
+      "sha256": "9f670cd24a88dd2e2ba889b3be9c4117507ad244f9590a008a6d9ae8491ae936"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H7RS/DA_Config.obk",
+      "bytes": 108,
+      "sha256": "30770a7e4a9b162721449de443d1849d4b861a8188efb520553b478bd7bf7654"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32H7RS/key_3_leaf.pem",
+      "bytes": 246,
+      "sha256": "2b19ce25346cb10fd2294f29f79b83e5d8f63952868bec4529f0b29fda5fc60a"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32V8/Crypto/DA_Config_Certificate.obk",
+      "bytes": 204,
+      "sha256": "216bbc25238146eb44150fe398380a580969a0ac5e8dc5d5a74bb937924bd238"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32V8/Crypto/DA_Config_Password.obk",
+      "bytes": 204,
+      "sha256": "db02ed532f2e595392c2dad0815e5631e967e89ba75e3d03dac75f7bcfd7730e"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32V8/DA_cert.b64",
+      "bytes": 296,
+      "sha256": "932ec128ba3f50cd1d47b21fa7dea682e9579ed25fd043c645667a652412a888"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32V8/NonCrypto/DA_Config_Certificate.obk",
+      "bytes": 204,
+      "sha256": "231d7a0a94a50a2db62339ff0d30feea56e57da0d7868f095b8aa4a7e33cd080"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32V8/NonCrypto/DA_Config_Password.obk",
+      "bytes": 204,
+      "sha256": "e7a703b6ef5f95a9ffd5c1d2107e8425c37f90e5481f4c3d9884ba1ffeef5d4d"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32V8/password.bin",
+      "bytes": 24,
+      "sha256": "774e73f4c0ec7f9617da41405b0eb02d560ea498af8717de91b411203d1af499"
+    },
+    {
+      "path": "bin/DA_Default_Config/STM32V8/private-key.pem",
+      "bytes": 227,
+      "sha256": "636d6866c57f903a23ce29f64b4a2beed1bf5c99f1288920124d18cd40035cbd"
+    },
+    {
+      "path": "bin/DebugAuthPermissions.xml",
+      "bytes": 4876,
+      "sha256": "e098dffbab8e3c609f444fc4bd6633ab82dc396d7497fcf092dc442ac973cb8e"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x01E.xml",
+      "bytes": 4466,
+      "sha256": "a861de25f437632eb10a6a6a9c5b36aff1739eaf80a8b9e7c0c5787d677110de"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x028.xml",
+      "bytes": 4476,
+      "sha256": "1957a5f3828a16a71778109db467f9482ebdc6fcaf2f3e64efa9b153d83bebbf"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x032.xml",
+      "bytes": 4464,
+      "sha256": "a5349929b313e739f92774014efb2b9526a5023f73d4399bf5956ab3cc48362e"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x410.xml",
+      "bytes": 6583,
+      "sha256": "288bd44027b7b5260c39727c6b9ba250db3eecf2817e88d22c2af132a032ac40"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x411.xml",
+      "bytes": 6897,
+      "sha256": "5a0b602149f767eca7d45eee70f3f25189761becca903b63df5181f39ec0f855"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x412.xml",
+      "bytes": 6574,
+      "sha256": "3e79133844535385080d848230938ae8a425f9d2566b63d1b3a326896f063cd7"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x413.xml",
+      "bytes": 8264,
+      "sha256": "c8f3385f747ea912ab30dda49f3da8e9318efa754dbda42a054592dbd9055291"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x414.xml",
+      "bytes": 6578,
+      "sha256": "df59c1a90e5c64739f3327a9a791910865beceb29abb8c4152771e91ffb7cc93"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x415.xml",
+      "bytes": 20056,
+      "sha256": "51d5386e39e2837894f9184710e1276b570a821f35368564f54084f5f6d15710"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x416.xml",
+      "bytes": 8405,
+      "sha256": "513e77dfafc48593c8724862275200395131f2541fd2060a25e8502fe55ee30f"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x417.xml",
+      "bytes": 9477,
+      "sha256": "f3c49618dd025b4e2dd38380895e06f5bad1af9e98f2b3516931b74781de44e7"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x418.xml",
+      "bytes": 6599,
+      "sha256": "a161a503c74f14f3da05b4a1f256a8d12a07f8a67ab8cc350fbc9ce16e54621c"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x419.xml",
+      "bytes": 17581,
+      "sha256": "51f4284641d6bae95b73263953b9af4ada3ed3ca1a1a3e6e674c889b3522192a"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x420.xml",
+      "bytes": 6661,
+      "sha256": "62f5bd3384c9aaf19dc022785842a6fc80890f20dd026e584486a7ac504bd444"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x421.xml",
+      "bytes": 8458,
+      "sha256": "237dd818883fc8fbc0bdcd52510e44bc7bc5435ab956c20c29c6d4b40b0d87c9"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x422.xml",
+      "bytes": 8552,
+      "sha256": "cedd0b7bee5800d5f6f53197e242fc6c8c380ce158f708a9a909c9b8321622fc"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x423.xml",
+      "bytes": 8390,
+      "sha256": "b6ca4789752cb4658a896f7ab6d9f50606bb1cca5aecade880219a571312ed82"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x425.xml",
+      "bytes": 8758,
+      "sha256": "344a890919e6ddf2cf18c8de605e6272211c22fb8a23baeb638928f1bee0a811"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x427.xml",
+      "bytes": 10917,
+      "sha256": "e4b39d98120a424c80a6f8cc01afa5e74c4ed2a595ad679b544fa00531495b62"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x428.xml",
+      "bytes": 6622,
+      "sha256": "a7dff0d4322f7a5b8d65c3507902d1cd0d303f0c56586409f817bc4bac84f39b"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x429.xml",
+      "bytes": 10021,
+      "sha256": "b18a59d1649fdbc77a4dcf1438655f5e7b0b59d7302402e54930b1583155a6e5"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x42A.xml",
+      "bytes": 23783,
+      "sha256": "d8832670d435774ec76e17af9481b8b9a78771556ea7eba4b51572e5b6d0be89"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x430.xml",
+      "bytes": 6732,
+      "sha256": "8e6d50f63a90f5c63c4efd1013ad8544fa9c3c2ae08b20e5adb7b617e28ea484"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x431.xml",
+      "bytes": 8467,
+      "sha256": "55ea17175bcc1b5c16cf506e8eae0eaff6875bca3cd9e09ae20095f9fc06d11b"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x432.xml",
+      "bytes": 8879,
+      "sha256": "a306fc13ffbc772e5c0bd23bbe5880733dd7d9a8bfd67270cda1b31213a4d3d2"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x433.xml",
+      "bytes": 8490,
+      "sha256": "18e406f23407710a6a93a0251483c872b8b4635486f8a117a8b08db5ef76418c"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x434.xml",
+      "bytes": 12138,
+      "sha256": "b6c512050c0f6626393e481432916326e58095ac1d06c2a5b8e7f653d575b7fc"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x435.xml",
+      "bytes": 14150,
+      "sha256": "21c5b20092175a4cd18fc7c37abafbbf6f32cb2c9e10eaabbe82386dfaf831d8"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x436.xml",
+      "bytes": 10301,
+      "sha256": "50f8b0ec4f488456f131fa82ae150fb9693abe97d192141fc7e948ade8a10b80"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x437.xml",
+      "bytes": 10957,
+      "sha256": "63646651817eca38397a0ab576203f578fe930c3eae7a3c88a44aa289acbac35"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x438.xml",
+      "bytes": 7585,
+      "sha256": "26bc9a8780ac290ea32f8ac1c39871275044d18d5c9d90492e816084a95be322"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x439.xml",
+      "bytes": 7596,
+      "sha256": "ae97168f969e5bd09aa3926a5bee1d8e9ab13a9c6b9c887dd7190d609c35aee2"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x440.xml",
+      "bytes": 7351,
+      "sha256": "f37a8bc69eee56a75f1cbbd4267533b5bffa52293a20997c1a7dc9c4d6f2c3c5"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x441.xml",
+      "bytes": 8450,
+      "sha256": "5af5a228f17152b35d8fbf759bed27d289c4d4b8b92887370fccf2d0a17e7f32"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x442.xml",
+      "bytes": 21911,
+      "sha256": "3c28a44690f1eb84a5db712fcbcfdadc2de7c39c24f3c83bc874295bb325fcc1"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x443.xml",
+      "bytes": 18029,
+      "sha256": "2fbc93bfd4ebbf45de807ae9746ad263a7569173a83c585439c1f230412b1cef"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x444.xml",
+      "bytes": 10416,
+      "sha256": "d89cfeed2e6e0f984ac8e31ed032fee99a2f7a138e4a4c5111f8897a6c1bb25d"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x445.xml",
+      "bytes": 11273,
+      "sha256": "4d505fb8c2bcf1d295514e5d5423e253063a37f22d7d8e64bf874002899296e6"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x446.xml",
+      "bytes": 9407,
+      "sha256": "445d34fbec0bb078e3b36e4ba55e5ff26c161fb449a9b489a09c557f773cc9fd"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x447.xml",
+      "bytes": 29322,
+      "sha256": "45edcd934a30ad94b4dae2cc4693fcdab4b0fb15f3f4314fd1aa6c0b19a4a780"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x448.xml",
+      "bytes": 21128,
+      "sha256": "91a8ed7adb1456684b1e2986b5dc55c621553513c074c97d0433b38c318d73b7"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x449.xml",
+      "bytes": 14468,
+      "sha256": "16ff929e5affc30fbeaa6a549a81f4da9812c6c760ffa936eea04df6d911ac68"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x44F.xml",
+      "bytes": 15851,
+      "sha256": "109ae12e3c090ceb8bf72701024808cc1d5a9d7de1619a8e9f6387f698cf6769"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x450.xml",
+      "bytes": 22374,
+      "sha256": "3edb254ac5fcec7e3a5e7ea5ec2a20a041b9b20b7d9d30aeca687df1e86d2b8f"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x451.xml",
+      "bytes": 21072,
+      "sha256": "d224f2aaf22a04674d401b69b75f3ae79b4df30ecbaeca20c6557e121a2a5a55"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x452.xml",
+      "bytes": 12801,
+      "sha256": "c86644d4ade10f037d36d4bde5845ade0b8350ff57d5b564529c2a7a542e4bf2"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x453.xml",
+      "bytes": 18030,
+      "sha256": "eec6b79c891a70def77ee2ff2cc9e5b991bd555017a9c4b1879978a5b1841756"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x454.xml",
+      "bytes": 31595,
+      "sha256": "f893dcb2fe219d3223570b0a05d4a20af633a115d91243c65e5a2f7ab4ef7224"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x455.xml",
+      "bytes": 24533,
+      "sha256": "bf3c23840ab58a929374e2b5f518a88659b3b151e0ea08b9b473d57af3807cb1"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x456.xml",
+      "bytes": 18430,
+      "sha256": "46794ceaa438bc0b387306b275349a6a0d1cacd1d44ed2cf017e41998a0a1d17"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x457.xml",
+      "bytes": 9713,
+      "sha256": "75de9db001ceacedc53649bb8162d6246625e4240afd52419e860486e09dc985"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x458.xml",
+      "bytes": 8350,
+      "sha256": "d4abdb04f009b7648bc6964ee57a18c822f4107f3d4c254e379660d962ec7724"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x459.xml",
+      "bytes": 18521,
+      "sha256": "fd5092bd19ddb9c5da9afac0d1f7e0c02378604dcf1ec7033d2da64bb9222263"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x45A.xml",
+      "bytes": 15815,
+      "sha256": "f9b862bcc3094003c0b7fa7343f39f48eeaaffd6a74dd6f367ffc194d4857672"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x460.xml",
+      "bytes": 18617,
+      "sha256": "574bbd030b59dbdb4580f6852adbc08bd41bd1e658e21206efe1484c79015133"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x461.xml",
+      "bytes": 17790,
+      "sha256": "224d8e30ebdbf6edf120fa51bfc7b9de18bcea597a6825108825373228b9bdf5"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x462.xml",
+      "bytes": 14262,
+      "sha256": "bf16cfeda408b210a607534cb77041c649d62ec942e1f95f6fef3d8cd1ed4d83"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x463.xml",
+      "bytes": 15354,
+      "sha256": "c20a63f74a1cdd1fe6c45268c784fa63f69abd9101b6122e9b4fa730cccb8738"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x464.xml",
+      "bytes": 14242,
+      "sha256": "4f6f66fff47d3b284af968dd03dde81766f7fdffa1c731d4fe98cc1001d43f0d"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x466.xml",
+      "bytes": 19417,
+      "sha256": "a5be303bb8a1e8fca6dace1745a4e278db1f55ccba18e15f865d36073c5436a0"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x467.xml",
+      "bytes": 25669,
+      "sha256": "6620ae62308cbdd57a94d51601880a51bf7b3f58ab45e603199d12ac4d95d14b"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x468.xml",
+      "bytes": 16335,
+      "sha256": "bbeb097f26dcc9a7cd64d56a6fd7aaa4de72fc4104d7465af6e47f5fc02d15a8"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x469.xml",
+      "bytes": 23065,
+      "sha256": "adb37d8b07c437a3712f73b1e0194c8e3ad9ed854eceb1bfbad9b7da5d0e40da"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x470.xml",
+      "bytes": 21735,
+      "sha256": "b0276fffd18e01d93fec35bf8973e23df685bb63eb047441c5c1b811204740ae"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x471.xml",
+      "bytes": 21550,
+      "sha256": "93391cd4bf4d0ca3e38dcbd04b78e84b500afc990b052767c4d9f7cb2d452d8f"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x472.xml",
+      "bytes": 36009,
+      "sha256": "51b6346ef969c9f5fc3e46303682a59e60215f707fe6f6bd23459e162bdd9b08"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x474.xml",
+      "bytes": 15973,
+      "sha256": "f09adf2ab5ce6405a278335e800f56fa16d6ea2e0b76ac0b15c2585458aa4b44"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x476.xml",
+      "bytes": 25217,
+      "sha256": "cd23d32e99c7a4bde867a8efce2851592a299a4126ad2595a6e4d6e490d7caa2"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x478.xml",
+      "bytes": 21540,
+      "sha256": "5e06fcdea84dbc3d65605df1fd3f424634122665a381f9549e0a8fe5ec3b0a5d"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x479.xml",
+      "bytes": 16748,
+      "sha256": "4c84727d99ffabdd0f600ec51d2368fff1901c889072ab6073fd84913a4c4fc5"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x47A.xml",
+      "bytes": 24740,
+      "sha256": "e30008cace6de4a98336e797549eba8d531c722df1bba7b51492b6d26eece2bc"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x480.xml",
+      "bytes": 41306,
+      "sha256": "d73ad85c76a1f88c5791fb5263d041d9f016de27ef0ede7800a658e1b4f6d674"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x481.xml",
+      "bytes": 25286,
+      "sha256": "ac8ee61514a5edbde1d68b192ce4ae764ecc49a89ae0356c127f407f21ab17f5"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x482.xml",
+      "bytes": 25268,
+      "sha256": "1e145419f3b334aac4db1818e7d3a6e508e6fb2b534edd79e5cc7437179b9798"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x483.xml",
+      "bytes": 16130,
+      "sha256": "613381e307280b3cfbe1b4e8fb9601dda83de9337398a02f90bee104720b8d16"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x484.xml",
+      "bytes": 22550,
+      "sha256": "c0b2340c574f81e47e493fca53847a7fddb14b2ea1f35107294728432c0064ec"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x485.xml",
+      "bytes": 23826,
+      "sha256": "d771cad5a08e184786c7887835a14882aa899a2876c0ed12b4703119917a7bab"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x489.xml",
+      "bytes": 18803,
+      "sha256": "ebea5f8933d95d3157a6b60539d95e4c1e174519ee47de6d8a53491d582ced79"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x492.xml",
+      "bytes": 20090,
+      "sha256": "39cba98a4fce5326832dcb1036dacd943f833e94a674420970fa0612ea205cc1"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x493.xml",
+      "bytes": 17827,
+      "sha256": "e0178ed296eeeaeae683ee018c5b3b3519c6ed003191f1cb41314cb7470646a1"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x494.xml",
+      "bytes": 22319,
+      "sha256": "211ed82b41a726496b5d15f83fc95a72f1efb97f2c7ce2fb25143068958c72f3"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x495.xml",
+      "bytes": 20044,
+      "sha256": "63cea12ace96ad7c14a22eb44b60679a359382228800c0b263a183b22c67f5ee"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x497.xml",
+      "bytes": 22787,
+      "sha256": "afebbb0fe752aac42db2600f5bc7b1e19e3f3cfde697379eee1f530034e9538f"
+    },
+    {
+      "path": "bin/FastROM_Data_Base/STM32_Prog_DB_0x4B0.xml",
+      "bytes": 23619,
+      "sha256": "108ee585b8f3016c05f7e48dbffdffeed4c42ae38101961c10a8588c925d3d62"
+    },
+    {
+      "path": "bin/FileManager.dll",
+      "bytes": 156624,
+      "sha256": "0b54e4c3cb9cd87d709a1b142bd278e686dbbc19578c3fa184e595ef21b8c6a6"
+    },
+    {
+      "path": "bin/FlashLoader/0x122.stldr",
+      "bytes": 14996,
+      "sha256": "fd19f20e9f1fb0ee8caa530e0b53e7a97bbe5e8b4d1fbff96250e4ce2d90f07a"
+    },
+    {
+      "path": "bin/FlashLoader/0x1E.stldr",
+      "bytes": 15836,
+      "sha256": "71175b7b5b0989d17d0238850d4ebdc8e28dd05136d6851a105972dd458c97d4"
+    },
+    {
+      "path": "bin/FlashLoader/0x27.stldr",
+      "bytes": 15656,
+      "sha256": "a5046b15e2eb704c90fb1ce86f188727cf6a3b1296b4e148aecd36f5f8f97993"
+    },
+    {
+      "path": "bin/FlashLoader/0x28.stldr",
+      "bytes": 15608,
+      "sha256": "f1adae717a2ca4df0fa73283d7d291b22c32ef35cb2dd332172b4a4bc91b4361"
+    },
+    {
+      "path": "bin/FlashLoader/0x32.stldr",
+      "bytes": 16628,
+      "sha256": "4d586f0838de6d39f727bf912b2b77984164ca71a5f44e8f77d417b5ad4e2ef0"
+    },
+    {
+      "path": "bin/FlashLoader/0x410.stldr",
+      "bytes": 37780,
+      "sha256": "6b18271fe9eee366b11eb279d561a3f812534a4bb4252607af895648998bd45d"
+    },
+    {
+      "path": "bin/FlashLoader/0x411.stldr",
+      "bytes": 36832,
+      "sha256": "10cc386647f3b8e8a8a9c771f6f329aa0abe78fad8de3a61e929ebcb3ff919ab"
+    },
+    {
+      "path": "bin/FlashLoader/0x412.stldr",
+      "bytes": 33016,
+      "sha256": "e6995e298ad1c0032e2f432976649928c6a3306aabf96edd00f44e27d6225628"
+    },
+    {
+      "path": "bin/FlashLoader/0x413.stldr",
+      "bytes": 38752,
+      "sha256": "6c747cac767865cfd7eab504d8c6fef23a602679828d2a18e244764c69bfdd60"
+    },
+    {
+      "path": "bin/FlashLoader/0x414.stldr",
+      "bytes": 37780,
+      "sha256": "0788c28b9ee365f4a6ac2e729f950a21eec7abdaebbb791b717864704a43527f"
+    },
+    {
+      "path": "bin/FlashLoader/0x415.stldr",
+      "bytes": 40928,
+      "sha256": "84f6d96ca46ea72b8085dc11dae2194bb7ef054fecb8c80173e0158db4b369f1"
+    },
+    {
+      "path": "bin/FlashLoader/0x416.stldr",
+      "bytes": 42016,
+      "sha256": "f9b68964ab19fae707cf3a7bdad28fa49857b1f9405d60b5c12b1f123e64266e"
+    },
+    {
+      "path": "bin/FlashLoader/0x417.stldr",
+      "bytes": 41636,
+      "sha256": "9c44309fce56f361de96eb23879a708592ac02d03089f626724c52f67374406f"
+    },
+    {
+      "path": "bin/FlashLoader/0x418.stldr",
+      "bytes": 37780,
+      "sha256": "6a59c0af636349d6d007c8b8986721e2e8a4d202c4861314e1e8f1a4119eb2e0"
+    },
+    {
+      "path": "bin/FlashLoader/0x419.stldr",
+      "bytes": 49628,
+      "sha256": "84968241f7cb035aad5134a26c8b5b2f29ed15e4599ef3b1951f287b1c3fd788"
+    },
+    {
+      "path": "bin/FlashLoader/0x420.stldr",
+      "bytes": 37788,
+      "sha256": "26189e9fbae2793fbdab4b2047ed586c3894486bf988aea5e6eb7c1d2d5f2582"
+    },
+    {
+      "path": "bin/FlashLoader/0x421.stldr",
+      "bytes": 38928,
+      "sha256": "2c147be51d07d082ff10e32af14669e7087eb83d508684365b7230dfe16ebc9e"
+    },
+    {
+      "path": "bin/FlashLoader/0x422.stldr",
+      "bytes": 28920,
+      "sha256": "c74e8f2dfbefca4ef1033f4a384f502d71f519c9ce8fc8a5a9286dbc2000134c"
+    },
+    {
+      "path": "bin/FlashLoader/0x423.stldr",
+      "bytes": 39300,
+      "sha256": "6afb8902acc3e7bc5878583df9495b6c6b1cd5ced4305e850a840eba7a8a5a37"
+    },
+    {
+      "path": "bin/FlashLoader/0x425.stldr",
+      "bytes": 31800,
+      "sha256": "651c494e7ae470f2adb36c6d3a2f15a7a79869b67717851ac477b620b7c9137c"
+    },
+    {
+      "path": "bin/FlashLoader/0x427.stldr",
+      "bytes": 36100,
+      "sha256": "67f195646199a8a3797372c54ac04f1cb422d32f4cbdf2c426ecd2ee0b27b4ba"
+    },
+    {
+      "path": "bin/FlashLoader/0x428.stldr",
+      "bytes": 37788,
+      "sha256": "2706de3adfb0d077f97a0d5a3e3add7c4c282672664b4d649ad419cd0feb7b4c"
+    },
+    {
+      "path": "bin/FlashLoader/0x429.stldr",
+      "bytes": 27120,
+      "sha256": "18b8925e7c05d09597d81a91bd9079078f428eb42e45a52a8f20a82caaf68943"
+    },
+    {
+      "path": "bin/FlashLoader/0x42A.stldr",
+      "bytes": 36676,
+      "sha256": "9cde1819dce3af67ada729001a5d9551f066acac4ccce2dc1b77f1b029d0e131"
+    },
+    {
+      "path": "bin/FlashLoader/0x42B.stldr",
+      "bytes": 35676,
+      "sha256": "968f825f43dbb506c2cb6a5adf8a4b41d7a989900c98f553e66b9db0ac02e8dd"
+    },
+    {
+      "path": "bin/FlashLoader/0x42C.stldr",
+      "bytes": 37832,
+      "sha256": "190acf74a4b6aa6ac1eafa32de5238f88482b9263d1cb6d5f1cebecfbc106ec5"
+    },
+    {
+      "path": "bin/FlashLoader/0x430.stldr",
+      "bytes": 69700,
+      "sha256": "2d3a97bc217f146940630c716b4a5e93cd6b527f24ad63240c9b88fbd0065914"
+    },
+    {
+      "path": "bin/FlashLoader/0x431.stldr",
+      "bytes": 38928,
+      "sha256": "135af00ecbde2cfe2a60af88b16a782f44250f66c951eb2dda0272eb4f266229"
+    },
+    {
+      "path": "bin/FlashLoader/0x432.stldr",
+      "bytes": 29564,
+      "sha256": "70d72f02b8080bcd205ac863873809805b10b8b85ab855cb3efcc40003b3e915"
+    },
+    {
+      "path": "bin/FlashLoader/0x433.stldr",
+      "bytes": 40652,
+      "sha256": "0d9a158924e91c76b8622d06d6a37ff3c4ceb5936db5d82a8a8adbde06126c5c"
+    },
+    {
+      "path": "bin/FlashLoader/0x434.stldr",
+      "bytes": 50336,
+      "sha256": "3eb1fb9c4d757577b149a8511abee09bcdd39a24250de71cc39961b66dc00f15"
+    },
+    {
+      "path": "bin/FlashLoader/0x435.stldr",
+      "bytes": 32564,
+      "sha256": "71ff552bc2808f80038784b44fbeeb6847234de219b68f93f11bb83ab9f73601"
+    },
+    {
+      "path": "bin/FlashLoader/0x436.stldr",
+      "bytes": 43244,
+      "sha256": "3be20dd50019f03b41f87bc501f92ff0db40936f8fbe3db3ea498332b74ecae6"
+    },
+    {
+      "path": "bin/FlashLoader/0x437.stldr",
+      "bytes": 31992,
+      "sha256": "1c2adb59cacabfb34824b79bcc1999fc4b3e366783969b627c9a3b2e0d88c07c"
+    },
+    {
+      "path": "bin/FlashLoader/0x438.stldr",
+      "bytes": 28904,
+      "sha256": "c01f88a4deed1acd1651701abe1cb4c4c7ac6bdae85427728a089444ce6e10d7"
+    },
+    {
+      "path": "bin/FlashLoader/0x439.stldr",
+      "bytes": 28952,
+      "sha256": "664199b3b452fed401c992e9e33165c99fdfb5a327b277a0f13fc7a06d1429ca"
+    },
+    {
+      "path": "bin/FlashLoader/0x440.stldr",
+      "bytes": 25404,
+      "sha256": "d5cb9dce8d90dd74801634d2b25bd80c6a0692b2e0c50f95067808274bfd1fff"
+    },
+    {
+      "path": "bin/FlashLoader/0x441.stldr",
+      "bytes": 45968,
+      "sha256": "c3842d274aa358133ab102932c287521ee46c12e747ce78760dffb3c002273e7"
+    },
+    {
+      "path": "bin/FlashLoader/0x442.stldr",
+      "bytes": 28708,
+      "sha256": "2c4b3f3849f504d51716d28ce2a1e16caa8854a1d0e785f4580d724fe13dac98"
+    },
+    {
+      "path": "bin/FlashLoader/0x443.stldr",
+      "bytes": 29388,
+      "sha256": "ca153f5e40b366e40e6ffab9126804221cc3e37945e8c11fdc343f5a5f900bef"
+    },
+    {
+      "path": "bin/FlashLoader/0x444.stldr",
+      "bytes": 28832,
+      "sha256": "9c9d823604cd7804e2d95b2fa94505d14af10019f5549fb177ab89ed4651c90e"
+    },
+    {
+      "path": "bin/FlashLoader/0x445.stldr",
+      "bytes": 28708,
+      "sha256": "5610ef4985792bab219683e4aa139fcd640cc8797dcb91d90aac34ec104b7af2"
+    },
+    {
+      "path": "bin/FlashLoader/0x446.stldr",
+      "bytes": 28804,
+      "sha256": "975e87f23c1080fab93d40ceb03109759e6732fa27c92c225acc3d7086d7d475"
+    },
+    {
+      "path": "bin/FlashLoader/0x447.stldr",
+      "bytes": 33616,
+      "sha256": "a07c64304fddfeb41d6ea563d7f6707cbb1e3fdad2b790a1d3d8acc7715574e6"
+    },
+    {
+      "path": "bin/FlashLoader/0x448.stldr",
+      "bytes": 28708,
+      "sha256": "5939bbbbb9a5c8fced72722bb0d7ad266905f17571fa75afae9df675a712cdb0"
+    },
+    {
+      "path": "bin/FlashLoader/0x449.stldr",
+      "bytes": 39680,
+      "sha256": "54b05a4b625707a65569dfe2979154f89bb8cee8cf7b4ab30d6cf65b8f5cab66"
+    },
+    {
+      "path": "bin/FlashLoader/0x44A.stldr",
+      "bytes": 78388,
+      "sha256": "9cdde35b540730a1886f7f02552301a161aa68a569b0222c543f8be213f5f2ac"
+    },
+    {
+      "path": "bin/FlashLoader/0x44B.stldr",
+      "bytes": 78392,
+      "sha256": "21bfb4029d9ab39ae1821540ece507e045777d4ca0c7b39ae3d058571dd10b3b"
+    },
+    {
+      "path": "bin/FlashLoader/0x44C.stldr",
+      "bytes": 34048,
+      "sha256": "69a8ac68e9201a0ddcbf2a47ea562d73411e33ac8e1751251bb7b8ec729c2a65"
+    },
+    {
+      "path": "bin/FlashLoader/0x44D.stldr",
+      "bytes": 25760,
+      "sha256": "295ba195ee3e2a0009751588a9b9249c1ebc84735e253af77d99f7f1f18a91e6"
+    },
+    {
+      "path": "bin/FlashLoader/0x44E.stldr",
+      "bytes": 80444,
+      "sha256": "9f69bf7fcc07e07d258612cd13701114760a96401a1f0d060dd5c5635c957418"
+    },
+    {
+      "path": "bin/FlashLoader/0x44F.stldr",
+      "bytes": 80444,
+      "sha256": "0a47722966c7cadc94edbed4aad0b4a4a0b267e3ba332ac757520c4258e1ab41"
+    },
+    {
+      "path": "bin/FlashLoader/0x450.stldr",
+      "bytes": 17528,
+      "sha256": "332f34bb4470cf883c724e418507dab426f4bd4362669d8977baf303ad112f20"
+    },
+    {
+      "path": "bin/FlashLoader/0x451.stldr",
+      "bytes": 51708,
+      "sha256": "9c691938bcaf44152d6a9bd2cdc8a4fa5b6a49d9cf8ae7cca7b95b8e37b0cc7d"
+    },
+    {
+      "path": "bin/FlashLoader/0x452.stldr",
+      "bytes": 33536,
+      "sha256": "0aa5e1668ad2a1a8c4b34c0e088248aef750b50312b6914d9a702a3951223427"
+    },
+    {
+      "path": "bin/FlashLoader/0x453.stldr",
+      "bytes": 29400,
+      "sha256": "4c3edfda9a20aef930a5821f3d0b0d8a8753575405964d3a90bfb6261e09b965"
+    },
+    {
+      "path": "bin/FlashLoader/0x454.stldr",
+      "bytes": 34404,
+      "sha256": "8b1bb78a346587eb57d03da3c493a88b555ca95c04593f43d74cbb948a7ef860"
+    },
+    {
+      "path": "bin/FlashLoader/0x455.stldr",
+      "bytes": 32616,
+      "sha256": "2eeafd93ce67f619bdf5555e505aa157dc1ec5180e76cf140797be41df025252"
+    },
+    {
+      "path": "bin/FlashLoader/0x456.stldr",
+      "bytes": 34312,
+      "sha256": "819ee37c7aff1d13e83cf2302bbe79911e4650153697d415be3b821104ad9005"
+    },
+    {
+      "path": "bin/FlashLoader/0x457.stldr",
+      "bytes": 32644,
+      "sha256": "5d5af487902ea3a3458bedecd8be02ff7c8d8d76d3c2d635389fbdd5e0d718c2"
+    },
+    {
+      "path": "bin/FlashLoader/0x458.stldr",
+      "bytes": 27868,
+      "sha256": "86df385de854a5b1eae65b4fc73736ff65d2cb651ddc324551b1e62efb2c06f5"
+    },
+    {
+      "path": "bin/FlashLoader/0x459.stldr",
+      "bytes": 31748,
+      "sha256": "3163f08d41c6cf475422dcf36a894155da1c3ac056a8cc55f4a1f6e581d32130"
+    },
+    {
+      "path": "bin/FlashLoader/0x45A.stldr",
+      "bytes": 80384,
+      "sha256": "925245465bc78ae7646c7cb1b0ea45a7de10e3a59967d04018d90a60edba0685"
+    },
+    {
+      "path": "bin/FlashLoader/0x460.stldr",
+      "bytes": 32852,
+      "sha256": "0bad366ac023369480aa47514fc44b280b9658507e4bb819b956010cac481379"
+    },
+    {
+      "path": "bin/FlashLoader/0x461.stldr",
+      "bytes": 35432,
+      "sha256": "985151346a39ba4c0dfba8dd4db26f8973f2ae8ca0754b03b9725f325b26d659"
+    },
+    {
+      "path": "bin/FlashLoader/0x462.stldr",
+      "bytes": 35792,
+      "sha256": "e2c627fc6fca11bda9d06b849d9176d7434977d2133fce8d5d2846cc5658c125"
+    },
+    {
+      "path": "bin/FlashLoader/0x463.stldr",
+      "bytes": 45032,
+      "sha256": "2b91106b179edbffab7e752939317a1fb49c8b9dfe7a6015e6799037a5f1228e"
+    },
+    {
+      "path": "bin/FlashLoader/0x464.stldr",
+      "bytes": 35808,
+      "sha256": "37f4b9944e1b78ea2e82660b4691a3f2f15f5f7051945b88dae1a3898c3db099"
+    },
+    {
+      "path": "bin/FlashLoader/0x466.stldr",
+      "bytes": 30992,
+      "sha256": "5c41ade51ce9e6a4bced82d3dda6764c742b983553eddc097dd5a0c6611be2bc"
+    },
+    {
+      "path": "bin/FlashLoader/0x467.stldr",
+      "bytes": 34488,
+      "sha256": "cf9ddd0482ec53f023e884b5363083430800524b8bd1ff8944e52ee48b7aae76"
+    },
+    {
+      "path": "bin/FlashLoader/0x468.stldr",
+      "bytes": 39652,
+      "sha256": "6c4f4f1044112d904b49b11b8e61e655ed5109df01a77899f84053e6b33424fe"
+    },
+    {
+      "path": "bin/FlashLoader/0x469.stldr",
+      "bytes": 31364,
+      "sha256": "93fbee04797b9e034028bca7306d6a5471fc050afabd2f526625d4c8b52f9f82"
+    },
+    {
+      "path": "bin/FlashLoader/0x470.stldr",
+      "bytes": 30636,
+      "sha256": "462edd9cfc1b41973e57f1727d2d4000d1dfdb02a342f6b4407144b603c29d20"
+    },
+    {
+      "path": "bin/FlashLoader/0x471.stldr",
+      "bytes": 37224,
+      "sha256": "463544d7a542e9bc9514aca3d04b58a308df37d98a79fa9f5b55ded8c1ba01a3"
+    },
+    {
+      "path": "bin/FlashLoader/0x472.stldr",
+      "bytes": 28804,
+      "sha256": "0f8cb7c9c43932edd31c1be61374a2699642fa4546cbb5734272274ba73ecf3a"
+    },
+    {
+      "path": "bin/FlashLoader/0x474.stldr",
+      "bytes": 28308,
+      "sha256": "030a585e451cf7dc867da3ab9461937716749b6b16fab841e60d439e19bd03c9"
+    },
+    {
+      "path": "bin/FlashLoader/0x476.stldr",
+      "bytes": 24804,
+      "sha256": "2141e7d416b38863426c924a68546d9faf5993979ee7050cf51b10a36e9afe9e"
+    },
+    {
+      "path": "bin/FlashLoader/0x478.stldr",
+      "bytes": 27748,
+      "sha256": "2dd8856eba52662924f0c60fc85b3076d184dde9d93bc542dfe136ff86bb786f"
+    },
+    {
+      "path": "bin/FlashLoader/0x479.stldr",
+      "bytes": 33884,
+      "sha256": "f274182a8201ab4643e68ea1cc55060d70da29f440e98a73d5932ed18cf4d78c"
+    },
+    {
+      "path": "bin/FlashLoader/0x47A.stldr",
+      "bytes": 36196,
+      "sha256": "e8bb7c923a7e75250144334fc0205e686553017b41cce5250169f91a6531df78"
+    },
+    {
+      "path": "bin/FlashLoader/0x47B.stldr",
+      "bytes": 72648,
+      "sha256": "68e73d10a62a44a1becb438cc15b4a5c4ac9eaf6fbaa5192eff4c4bdb9fd4e40"
+    },
+    {
+      "path": "bin/FlashLoader/0x47C.stldr",
+      "bytes": 28272,
+      "sha256": "7de299ee508c609c2117a9d35cd0b525e5ff0a9da615a3f8833a61f638231b90"
+    },
+    {
+      "path": "bin/FlashLoader/0x480.stldr",
+      "bytes": 30888,
+      "sha256": "332637a87b31987d90c9a0521d55254d28142fbb0aa6ca123842f55c3d5343e6"
+    },
+    {
+      "path": "bin/FlashLoader/0x481.stldr",
+      "bytes": 34776,
+      "sha256": "6fce2111c6fae8d7f86001bb17eaaf895b8e484ccfb41cdab772a0d55f76545d"
+    },
+    {
+      "path": "bin/FlashLoader/0x482.stldr",
+      "bytes": 25872,
+      "sha256": "d1a4724efd416d78844e25748ed12cb1a1bbbdc4e21dbdd4f78e3b6893e324f2"
+    },
+    {
+      "path": "bin/FlashLoader/0x483.stldr",
+      "bytes": 20748,
+      "sha256": "639a988e15f5e1adebd2939ff79510e759389cbfe41ea4cacc5b961ce491838c"
+    },
+    {
+      "path": "bin/FlashLoader/0x484.stldr",
+      "bytes": 36020,
+      "sha256": "80671e068689433aac30e3be9c5c76d72abe04e4035cc46c0277e1bd5c6cd3d6"
+    },
+    {
+      "path": "bin/FlashLoader/0x485.stldr",
+      "bytes": 25088,
+      "sha256": "9d27f9c89463e02fda497e2538b0916c595d261dc66bf3fbb6b88b160fcde4af"
+    },
+    {
+      "path": "bin/FlashLoader/0x489.stldr",
+      "bytes": 31812,
+      "sha256": "c9b9eb9b0cd7c30459b5c7762117970486f512efb21d065b27b420cf0fac80ff"
+    },
+    {
+      "path": "bin/FlashLoader/0x492.stldr",
+      "bytes": 22436,
+      "sha256": "6f277a63ff44b1866fd9e8e72b2e0d6319552eaee672428d62f962138891e9b3"
+    },
+    {
+      "path": "bin/FlashLoader/0x493.stldr",
+      "bytes": 35608,
+      "sha256": "04b3f1cf5ddc23ddf4d0f52e943c8d5f8c57104d720817c809e37c761ca38aae"
+    },
+    {
+      "path": "bin/FlashLoader/0x494_FUS_Operator.bin",
+      "bytes": 8192,
+      "sha256": "c457a555b03592d89ba37a59bbb05b4a0f0bf8d24adb3eca37b7b7ac7e869cf6"
+    },
+    {
+      "path": "bin/FlashLoader/0x494_nonSecure.stldr",
+      "bytes": 22588,
+      "sha256": "28d011b0ea15693a2aed46887c8a35a98ce1fbf92e503b971255103cc1c46986"
+    },
+    {
+      "path": "bin/FlashLoader/0x494.stldr",
+      "bytes": 31564,
+      "sha256": "77405371d73804ac9508fec48ef7b5ed0a874ef2e5c5ad3680cb377f84bd6a6d"
+    },
+    {
+      "path": "bin/FlashLoader/0x495_FUS_Operator.bin",
+      "bytes": 8192,
+      "sha256": "5b60200c9b0f9d77bc70b6dd25566eefbedc2b275ac1331fd826be14d9d49ba6"
+    },
+    {
+      "path": "bin/FlashLoader/0x495_nonSecure.stldr",
+      "bytes": 20956,
+      "sha256": "bca502f805a7af2189e28fc1e3f82e4e1e2acc81712f209465a839c80861a1b1"
+    },
+    {
+      "path": "bin/FlashLoader/0x495.stldr",
+      "bytes": 24828,
+      "sha256": "59d8a7d4085a2f580b030c89cc68c33d6302fc4f50acb13341a64e61f02bc92c"
+    },
+    {
+      "path": "bin/FlashLoader/0x496_FUS_Operator.bin",
+      "bytes": 8508,
+      "sha256": "4ab287d066cb9820b7cdc05329c16243597bf8b81ba788520a5c8668adbc0def"
+    },
+    {
+      "path": "bin/FlashLoader/0x496-nonSecure.stldr",
+      "bytes": 32652,
+      "sha256": "0ce595bf11bf9e42c5a2860e4b336bd5888fd4f874830e89131f1bd5fea03e7e"
+    },
+    {
+      "path": "bin/FlashLoader/0x496.stldr",
+      "bytes": 33844,
+      "sha256": "f759bb23f738372208f455016199580ed7edd3355aa88ddee04ec89e1c8e6b2a"
+    },
+    {
+      "path": "bin/FlashLoader/0x497.stldr",
+      "bytes": 40236,
+      "sha256": "fe5e43d6e5b07d23fefa926f0338340cac673373ecd3b8b24798d04f1b287281"
+    },
+    {
+      "path": "bin/FlashLoader/0x499.stldr",
+      "bytes": 74348,
+      "sha256": "77e6d39d662b81fa96a2a095d130c1a09facbd5e9127b5ff38166c2a2938c7da"
+    },
+    {
+      "path": "bin/FlashLoader/0x49A.stldr",
+      "bytes": 28532,
+      "sha256": "47bec24a2b0119e13b7a8c813ede6e8e5e09620721dff8cb0f1278ca1e000940"
+    },
+    {
+      "path": "bin/FlashLoader/0x4B0.stldr",
+      "bytes": 27548,
+      "sha256": "736d1a307d11163369118859dd93e42c59b3e1f6c57e8928bdbf1fb2ea27298c"
+    },
+    {
+      "path": "bin/FlashLoader/0x4B2.stldr",
+      "bytes": 28876,
+      "sha256": "844a59b7043f0c0d3ca677a7800556360c4daf0904ad62ebff8512c328a4f99e"
+    },
+    {
+      "path": "bin/FlashLoader/0x500.stldr",
+      "bytes": 30116,
+      "sha256": "a0367df91996a5762900d728be2b864411947b6fe7cd96f8e107d03d2100ca6e"
+    },
+    {
+      "path": "bin/libcrypto-3-x64.dll",
+      "bytes": 7526200,
+      "sha256": "03437fd9b1a48d553c0d7b26fa8d021d10a0f609e7314cea78c104432d36cc65"
+    },
+    {
+      "path": "bin/libgcc_s_seh-1.dll",
+      "bytes": 160904,
+      "sha256": "4326f1c1a3170b58da47b08f7a41ee72517e5ed699616d3f7c63173c9ad10927"
+    },
+    {
+      "path": "bin/liblzma-5.dll",
+      "bytes": 199472,
+      "sha256": "4a509341d8054a2dbd1132ba59e5ea0783261c505eae5cac190cc59150e4bcef"
+    },
+    {
+      "path": "bin/libminizip.dll",
+      "bytes": 528608,
+      "sha256": "570de83012b147c35a687a3db352e01bcf9889d3550d8efdc5fe2683a3ef0099"
+    },
+    {
+      "path": "bin/libssl-3-x64.dll",
+      "bytes": 1411792,
+      "sha256": "5a5eff5572883c20c1efba388417c42b22d550e9e3c2bf36bea870234130d1bd"
+    },
+    {
+      "path": "bin/libstdc++-6.dll",
+      "bytes": 2472552,
+      "sha256": "150cef4a6a733a6f8bdd55fb1681b0c76f632a9454934ac863e0871071c95b3d"
+    },
+    {
+      "path": "bin/libwinpthread-1.dll",
+      "bytes": 75624,
+      "sha256": "175cd501cbe109f2cc8240288722d3d3ab28cadea3e0f286fdd5f31fda875ba5"
+    },
+    {
+      "path": "bin/libzstd.dll",
+      "bytes": 1176192,
+      "sha256": "ce89bcae58dbd295a73bd587c7a8ab80ac9bc445b6bb0dd74937e09e7554ffff"
+    },
+    {
+      "path": "bin/mfc140.dll",
+      "bytes": 5614544,
+      "sha256": "173106519a21d5fd8e89f999b14fa931a5fbc5ac03a1d99b69e62275dbeb3112"
+    },
+    {
+      "path": "bin/msvcp140.dll",
+      "bytes": 543696,
+      "sha256": "6a93b07e2a6c5941a55fcad27680bbf15c87114984172ad91479b01bbb1933ba"
+    },
+    {
+      "path": "bin/msvcr120.dll",
+      "bytes": 957904,
+      "sha256": "a0a0a0522a54cb6e5908c4393cbc79474b784e98d40c0cee793c6ca990b22a66"
+    },
+    {
+      "path": "bin/OBL/OpenBootloader_STM32H7RS-DK.bin",
+      "bytes": 57336,
+      "sha256": "89388d1ab488581617cb922b58bb42402a23420c19544728ad00f2a4bcfca5d1"
+    },
+    {
+      "path": "bin/OBL/OpenBootloader_STM32H7RS-NUCLEO.bin",
+      "bytes": 39330,
+      "sha256": "152e55c585828dadc3e0905e04e694b077365f53f60d4971d0eba9d1a3f880a9"
+    },
+    {
+      "path": "bin/PMIC_Data_Base/STPMIC1.json",
+      "bytes": 13289,
+      "sha256": "0e1de1077f7ab9c74e53b8efae94613ddce79d0193b866c5759c8711a324d59d"
+    },
+    {
+      "path": "bin/PMIC_Data_Base/STPMIC1L.json",
+      "bytes": 35761,
+      "sha256": "86f76b02e4699d567911a7ae0f15505e707d438c4ead5a2f229b8c38335838fc"
+    },
+    {
+      "path": "bin/PMIC_Data_Base/STPMIC25.json",
+      "bytes": 50742,
+      "sha256": "f4c3a4ec7d4a9a38c75b6b898c6e2a13ef62534aee81c4e843ae4119044dd9ab"
+    },
+    {
+      "path": "bin/PMIC_Data_Base/STPMIC2L.json",
+      "bytes": 33676,
+      "sha256": "622a6bc487ae89befe6c245440021620277804abefb6260c04b0ac4117943e5f"
+    },
+    {
+      "path": "bin/psa_sdm.dll",
+      "bytes": 209872,
+      "sha256": "5972086ff4e45ce25b2777a72c7d8004455cc213b716568d40b9e227a0b72807"
+    },
+    {
+      "path": "bin/Qt6Core.dll",
+      "bytes": 11100000,
+      "sha256": "7e14027a0bb4017325db707c315c70ee008c8f2364f60bb2eb04d53c017ee762"
+    },
+    {
+      "path": "bin/Qt6Network.dll",
+      "bytes": 2043224,
+      "sha256": "fed7a1924045aab4b15005941b2113b9853c43acc80bdfeec8ea9b17d61bab86"
+    },
+    {
+      "path": "bin/Qt6Qml.dll",
+      "bytes": 6118232,
+      "sha256": "baa2783891436e309f849a54e7bbcad4bb735358863c2b298b70c68e8e147a3c"
+    },
+    {
+      "path": "bin/Qt6SerialPort.dll",
+      "bytes": 141656,
+      "sha256": "9e093fdfb54840d737fc81508014b678d5ed7f66058b995b02098ae7405b706a"
+    },
+    {
+      "path": "bin/Qt6Xml.dll",
+      "bytes": 160600,
+      "sha256": "1e49dd8c3c33a8c0d8a47ea7664058d0f0d56d04418f6e6c0ab29f05b4b76649"
+    },
+    {
+      "path": "bin/STLinkUSBDriver.dll",
+      "bytes": 628432,
+      "sha256": "a9af5a32460fb7f3be7348f0f433967f63be50eb74ed549774d008161e55654a"
+    },
+    {
+      "path": "bin/STM32_Programmer_CLI.exe",
+      "bytes": 4959936,
+      "sha256": "269db404ed3f2cdd7cfcccc257ab0a907f2364c3d44e39edab6b007cb5f668ed"
+    },
+    {
+      "path": "bin/STM32CubeProgrammer.l4j.ini",
+      "bytes": 44,
+      "sha256": "49c9575ad104d0e3316834add8e552c7bf2b892c755fdd084465ca636264a357"
+    },
+    {
+      "path": "bin/STM32WLScripts/Readme.txt",
+      "bytes": 360,
+      "sha256": "b1af253c6e9bc940a4838b840a3614d5dd9153201ff93153a3c3f151c88ded5e"
+    },
+    {
+      "path": "bin/STM32WLScripts/SetRDPLevelCM0.bat",
+      "bytes": 1094,
+      "sha256": "59081513d787a0c339cf7130ac21a7c66d81c91be3db4087565467e383043c17"
+    },
+    {
+      "path": "bin/STM32WLScripts/SetRDPLevelCM4.bat",
+      "bytes": 1100,
+      "sha256": "1e7f82283ed1c79a100d9415356ab925cf0f4e7a7718fdcb925e27d069668d6f"
+    },
+    {
+      "path": "bin/STM32WLScripts/UnlockChip.bat",
+      "bytes": 247,
+      "sha256": "1e792dd63e972af5b51e04a06571a4bef76adb3596f002495f895a80d38e72b4"
+    },
+    {
+      "path": "bin/TargetSelList/targetSelList.csv",
+      "bytes": 479,
+      "sha256": "7cfd275164e8c8f05268a89118fd4122d09930810a3d9f8c508df8ddae2b411d"
+    },
+    {
+      "path": "bin/translations_files/translations_ch.qm",
+      "bytes": 423042,
+      "sha256": "d8cd86c09c3a8e4a22f1ec9aa7308a4512f87b989875fab318eb9de3831409a1"
+    },
+    {
+      "path": "bin/translations_files/translations_ja.qm",
+      "bytes": 476459,
+      "sha256": "bcb29925f8f5f1a009059798268ee4c03e878c85d83f5f8bb2194ac9ddb679da"
+    },
+    {
+      "path": "bin/vcruntime140_1.dll",
+      "bytes": 37328,
+      "sha256": "34c9f6b4cb1215ccba23d5d5b67a1df927d904da3f101daf878c8e2e2dfc0e1f"
+    },
+    {
+      "path": "bin/vcruntime140.dll",
+      "bytes": 79824,
+      "sha256": "9628ae38d1fe6991335ffe7ed948232588cd300400f1e9aa51468c4fb13949c6"
+    },
+    {
+      "path": "bin/version",
+      "bytes": 7,
+      "sha256": "579c058e1ec7bd869f31186152dcce04324a5db3e6b81ec599f159ad3e1c3070"
+    },
+    {
+      "path": "bin/xerces-c_3_3.dll",
+      "bytes": 2805200,
+      "sha256": "60ba02c4c12d231337b8b31620a06438e4b6380a0269d23820246a672680d1a6"
+    },
+    {
+      "path": "CubeBundle.json",
+      "bytes": 442,
+      "sha256": "2e02ae9bc3dd12337c5505ac92bbe75670b8e3847a4277024c5b021fe66ec59b"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x01E.xml",
+      "bytes": 5281,
+      "sha256": "1c5c4a439427a7a1ab2af1458268038dcf5c10ebc0c44a5a21c1bec44afd7140"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x027.xml",
+      "bytes": 7855,
+      "sha256": "3aea939c4c3ba89686281fa0f3dc1e29f1cd627b3ca8684ee7305e920a710136"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x028.xml",
+      "bytes": 5279,
+      "sha256": "ddb6513d52b4e08945abb4eb71dbf8fb4a69c2a886f2be776e66308d32e961e5"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x032.xml",
+      "bytes": 5279,
+      "sha256": "5cb42bed21daadcf87a09b7f241b298c3fc70a0c2706276641be3c3a2a939c4f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x122.xml",
+      "bytes": 6686,
+      "sha256": "5f2526900f4f6b7946421f1101d24639503792938a9085e0108ef7e8eaf3168f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x410.xml",
+      "bytes": 15792,
+      "sha256": "4626aefee3380820f16cc9d8660ba40887008a4bc9a0f46b2245f7276b6ed168"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x411.xml",
+      "bytes": 13889,
+      "sha256": "326c8315fb3a4ef393fe6e930a4a5bbe00b6345fb8f799b9714e96486007e945"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x412.xml",
+      "bytes": 13235,
+      "sha256": "63149fc65d014f312ea1cc789e48f8c2495e070ec1ff615447c7e14c17af3a2a"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x413.xml",
+      "bytes": 12821,
+      "sha256": "dba33c204de70375507f2870c2039b58aec10b9c2a73e651e0e094b6b61b9e65"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x414.xml",
+      "bytes": 15787,
+      "sha256": "f2f98909603c560fbc71c4948274ec87a64a35e08cbdab4c843ca8ec62f77134"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x415.xml",
+      "bytes": 32846,
+      "sha256": "93366df5288e97985491fe70cbcead145e6b93af0fd0a3f02171fbbb9da6214e"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x416.xml",
+      "bytes": 17979,
+      "sha256": "c9ea59457fb3db3d937fd58a0923455e2cb5e686a82680a5c116212ec1757ae3"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x417.xml",
+      "bytes": 21478,
+      "sha256": "01db80a23e2fa2ed034846fa8d9305f745530a3770c4d7dd847e69f7f1f9acaa"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x418.xml",
+      "bytes": 15808,
+      "sha256": "25757051d7af37666f84db57a84a4b061e7702ccc80ac35e5a2aac4ddad6784d"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x419.xml",
+      "bytes": 22982,
+      "sha256": "db197954f9bbacb80235eb83d46f02ada3369676d579ed6fd5a9bc2d2a186636"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x420.xml",
+      "bytes": 15795,
+      "sha256": "6993dea4a1f50754615c870810d1a758c3a98a055919e5bcec4898c28c812f6a"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x421.xml",
+      "bytes": 13919,
+      "sha256": "f81e8f4b9163f8206636de55f474310111f0dfbf0c54fc2c1ed0a5c6ac5dd805"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x422.xml",
+      "bytes": 8055,
+      "sha256": "d70e5652c616ad91f03a4f990ae830c90e6d67bbe182677044cb33fa24ce2245"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x423.xml",
+      "bytes": 13917,
+      "sha256": "f54c70e1860026062a784e989b987a4c601f6c0a58c8f6cc17339f7e752847c9"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x425.xml",
+      "bytes": 21169,
+      "sha256": "370ff2ee2f22ebc8ab6ef3c70ad7e4a39bbe3439016d9d5d35b8a5a4f26a616c"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x427.xml",
+      "bytes": 19114,
+      "sha256": "75e43f13aabdc830e4afaaa405250f7ed02911614104af116b446078707eb496"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x428.xml",
+      "bytes": 15790,
+      "sha256": "280afce0bb2d285e5f14d4afa27c7bb0282281613837c11178920cb6d1c553a7"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x429.xml",
+      "bytes": 16556,
+      "sha256": "80f247a7c187706739128b44f0eb8480276b4dd9d04e14f5ebc9a2f733992222"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x42A.xml",
+      "bytes": 88431,
+      "sha256": "a3c72276ee609a6eeb118674ec58f647e8d9518430dc0c1cadb3cbaacd4cb14a"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x42B.xml",
+      "bytes": 86559,
+      "sha256": "8fbb0d9880215b94dbe9b5902b5ef5d3b0dcc11271bdd8bc8975075a47e01939"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x42C.xml",
+      "bytes": 82034,
+      "sha256": "863fb42b40714479d9deb6b4f52f4bac407aa9bf2ed511ac7d7e969a4040dc2f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x430.xml",
+      "bytes": 17369,
+      "sha256": "999c45c3d9ade06992a07e1be31465e5a47b25e59e8ce3df602b1ecfbcf60e44"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x431.xml",
+      "bytes": 13916,
+      "sha256": "ffef8b3b1e0f9db7f690530ad7717b5c2cda4ce9cc8188f09e8510d850d3a525"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x432.xml",
+      "bytes": 8411,
+      "sha256": "2ab97d0ac0a97a5d61b72b71bce70d8589fb0c3194008c9d45952e9bd29a95ee"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x433.xml",
+      "bytes": 13917,
+      "sha256": "3c3cf1ff4f44db2bdeb3c2c1ed0fb9976a78f51740ad4d35f73d750d0c27b2cf"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x434.xml",
+      "bytes": 22898,
+      "sha256": "7d1be7554295cb810e8e6db209331941823accd4c239d1260540d1e6d8c52ce7"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x435.xml",
+      "bytes": 24184,
+      "sha256": "692221a0a02cb3aea0a2b70349f987b74599f121881a011db28307ea49f4a406"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x436.xml",
+      "bytes": 24404,
+      "sha256": "8395f882de52680bcb4292e980d45d2fbf24dc313a8d82b6732c1e1020b6da1d"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x437.xml",
+      "bytes": 18988,
+      "sha256": "556414f0da5bb4807d55a37072cc72188ffcf9fe152586993d3a755efdf9d8f1"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x438.xml",
+      "bytes": 7164,
+      "sha256": "2488b89244161328215a1ae3f6a56d681d59af018574184691bf6212e3606493"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x439.xml",
+      "bytes": 7175,
+      "sha256": "241d3ea0a5d7db9c6dccd891191115811849054afd56997f1fe0f244026adafa"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x440.xml",
+      "bytes": 7098,
+      "sha256": "5add92215cc69ded526b69666941e2563a26fd2fd532479509ebc5d6990c6e57"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x441.xml",
+      "bytes": 13913,
+      "sha256": "fe43cf3845a3c4e431ee6f0eb44dcdcd29625109b85c77778560936543fb770b"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x442.xml",
+      "bytes": 8814,
+      "sha256": "d9fd10899bc56ca55c84d610605548a55bc2a44b22a05b53de94d29831f2a333"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x443.xml",
+      "bytes": 32586,
+      "sha256": "a42ef7b9cb908ab25abf0060c4f27e44be926c999af735429f820fa396c8c179"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x444.xml",
+      "bytes": 6745,
+      "sha256": "f2c25b192716c25ede536c63e7f4e7c8dd71018b40e58c38694df75902c17dd7"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x445.xml",
+      "bytes": 7642,
+      "sha256": "352d2fbb2f6182e941377982c2b8f2439b21b64f9a1434fec7cf04085078541e"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x446.xml",
+      "bytes": 8834,
+      "sha256": "c6c75911bba83481ea139fd8b8bf41cb7af784187d873e7ebfdb98dbbb3c87cd"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x447.xml",
+      "bytes": 29403,
+      "sha256": "ca49739e34248b8979886147260120dbfbe36baaccf855df89387ff9d69c6f1d"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x448.xml",
+      "bytes": 8030,
+      "sha256": "248ac9211db9c97e079183c5447b5a7f4aafdb9f06e5993c54685da94ac7c9ab"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x449.xml",
+      "bytes": 18201,
+      "sha256": "cdfa44ae1b6b135245b0a26e47d00bc591439e29537b24f69ac6e4bb3b4cd3f6"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x44A.xml",
+      "bytes": 130076,
+      "sha256": "08338bb5405ec417d10d415258578bb71a74312d8046ea31b3316d8b479b4f85"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x44B.xml",
+      "bytes": 122725,
+      "sha256": "c8792912625bdc3896bd749f0c0b6c037fbddc8b2acc7247db84d13d777a775b"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x44C.xml",
+      "bytes": 32621,
+      "sha256": "d33e3117d0f331d45266b67404a5589c4df6088c4cb55468adb335e138bda71f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x44D.xml",
+      "bytes": 34298,
+      "sha256": "ceb9c97f1305f06897f3a6c001969ab2c2d957af385f86c93637f245d2724810"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x44E.xml",
+      "bytes": 81264,
+      "sha256": "9b0fab06fb0f62c9c2c50d1d2481655467d68a87c9887b352a09f6331371676b"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x44F.xml",
+      "bytes": 61595,
+      "sha256": "f626d3f36523224449e8e2b66f82b7f4bc01c4c2ea4d1d8d9c1304852167fc51"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x450.xml",
+      "bytes": 42656,
+      "sha256": "af49259bb849f003ac1f687118c58893d0d03eb68ccf68459987fd0243f56a30"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x451.xml",
+      "bytes": 26046,
+      "sha256": "f9c54c1b491226c58131d794e08f71f7be4b8d29a72d9d83e2de54880355b470"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x452.xml",
+      "bytes": 20602,
+      "sha256": "76e487e67ef23325f136f57ea24190561834c3c0257b219e17532fc09ec92e7f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x453.xml",
+      "bytes": 32877,
+      "sha256": "1892b0b0707cb3e74764490cb0fee263b0c13a55a490b57adb0eba441f203dab"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x454.xml",
+      "bytes": 83824,
+      "sha256": "818ea066b5da836bd6a6218eb628c792f1ab1585bf6d2b97e95bfb47b2e3f725"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x455.xml",
+      "bytes": 133275,
+      "sha256": "e6bd7c2553f2539eb2c7bda9befc201a96ef9d220fc97ba54f6ea040570a7ff9"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x456.xml",
+      "bytes": 30511,
+      "sha256": "149198b58eef7e2737c3b583663c68163b0bf4dabadb59774347008b700258e3"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x457.xml",
+      "bytes": 23822,
+      "sha256": "27f8756a8c350a9b8d9870bdd0e009b9017664531218213238ab1cea51472154"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x458.xml",
+      "bytes": 13789,
+      "sha256": "99bd5a66f18979759b7e85a3fb0a792bcd08cafd8c703da34ba656636ed33145"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x459.xml",
+      "bytes": 25881,
+      "sha256": "13ab85c76d887f40e2aecc5a272ec82c5b4e001ac9e841e04e057c593d2021cf"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x45A.xml",
+      "bytes": 59372,
+      "sha256": "85310036bc6cc95ef2e58e0d7e434ee2b1dad2711392f0cecb0e5015320871f7"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x460.xml",
+      "bytes": 32693,
+      "sha256": "62d0ef66299ee4b89579dee29b9be4c76284f058f74498c4040442bf1f21aca5"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x461.xml",
+      "bytes": 33897,
+      "sha256": "e6433e787c7e72bfface89deb78748dbfaf7bfb7dc767fb86215f5c52ba7d889"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x462.xml",
+      "bytes": 23404,
+      "sha256": "eb10391f1bfd1e2dc53946bc9ca4ba83300071695a190b65ebb48ed2a3216c99"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x463.xml",
+      "bytes": 13919,
+      "sha256": "4ceb3017fd3713c1d828a52537a3807940c8925ac453801dd84ba7d9d6d9262a"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x464.xml",
+      "bytes": 23396,
+      "sha256": "da0caa2fa978fffc81993e6807ba0b49df581e147129a2bde7bd1efee20aa809"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x466.xml",
+      "bytes": 71606,
+      "sha256": "e365dd630768564f34e7261c43e31b65dd410653a1eb493aea4cf8bc2e10d99a"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x467.xml",
+      "bytes": 45059,
+      "sha256": "d0688691757c2627de8245e6532f374297f5146f209c7b29817679dbfe36741d"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x468.xml",
+      "bytes": 29100,
+      "sha256": "49f25ea84f5b0bc69384924879c5322ae30ea0bab6af82e5153ce082e1c7ce98"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x469.xml",
+      "bytes": 53270,
+      "sha256": "0bebb5fb78e28ccb586edb7766d6cda02f824d919cbb9268799aa5a3578ce669"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x470.xml",
+      "bytes": 53246,
+      "sha256": "de5255284e08fccbad4580a5270957a1e9626af68580aaf5b4ee5789c7b7974f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x471.xml",
+      "bytes": 47549,
+      "sha256": "476f4c1175271d5d64d72d3bcdf148b3fe8b9695500d88115ec47466cefef130"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x472.xml",
+      "bytes": 122923,
+      "sha256": "08f13730afd5aa54b9a6b3d35b79237dd81b64172122b63490ced4b8f01c035e"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x474.xml",
+      "bytes": 90052,
+      "sha256": "634171b1311861c4d96591a96b00f4c7f9cf2590436c840e5ca5de9ec8763f35"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x476.xml",
+      "bytes": 104988,
+      "sha256": "f248b93f643c6c005b82ce1ee70290caadb9698fe29d4e10d8038d6d2c927fd4"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x478.xml",
+      "bytes": 136342,
+      "sha256": "283168a34e617a7302c602de5760518c2b8717045b9d718edfdfaa9f34b394e2"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x479.xml",
+      "bytes": 30242,
+      "sha256": "bf7c50d6c6dc8b5f595294b8b88ce050c8896e88f51e75ed07d9ba23ce9975e5"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x47A.xml",
+      "bytes": 144139,
+      "sha256": "519df3a4fbf487d41cc6ab0b3cac1cfd17ddb8380a1687ea82505ff433c6d9d1"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x47B.xml",
+      "bytes": 48693,
+      "sha256": "8a476788d4e3e2a229554ab579e1012b60d52de338dfd5be69089dbcaea8f7df"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x47C.xml",
+      "bytes": 126686,
+      "sha256": "e760e7cdcdb2c39ef4446d03d2737a77058d947558a7f41dcec68976adbe0992"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x480.xml",
+      "bytes": 32242,
+      "sha256": "5e4db83f90bf44c122ce894678416f420ccedfe1a5d4cb47cf386b05f4db07b6"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x481.xml",
+      "bytes": 104984,
+      "sha256": "5922dc2ed35ed4a0a365b200882e995941da585e17733adc28656243ed321484"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x482.xml",
+      "bytes": 105643,
+      "sha256": "2672c4487bf7b071a4a961ab4ce6faae6ed910b9e84248d8f58de4b1c5a2edc8"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x483.xml",
+      "bytes": 26738,
+      "sha256": "01ce74dca0d2809e82eba409f29d260e1b6eb15bc16da2b15686c267ca1d1b10"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x484.xml",
+      "bytes": 137866,
+      "sha256": "1cf91d2a954c7164713b43837e47a5924cdecfcc6b3f5bcf3dca32b76ec4b1ef"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x485_swv.xml",
+      "bytes": 39955,
+      "sha256": "6d301a7f8d8a138e41f0bebe557331e667c1f813cc481612349e95cf974b1efc"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x485.xml",
+      "bytes": 41884,
+      "sha256": "80354f3da68dbfdd49b3b1f29ae9518af2f9d410e825886872316a529e973949"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x486.xml",
+      "bytes": 276562,
+      "sha256": "f52d4998373b808ce62994e3dd3df3d6ca26055c82288b1b5a4f33807dfb7410"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x489.xml",
+      "bytes": 26115,
+      "sha256": "c0b5337a40ed5480163b6b6048bb4455acee78503d26faab4b042a904f973f83"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x492.xml",
+      "bytes": 57068,
+      "sha256": "e195a5d8f988943158aec611747d153a2ad2d0f59f5e5ea68fdf83062a9c7f42"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x493.xml",
+      "bytes": 32870,
+      "sha256": "5bf8d392d5b85620e1aa9a1ddd38c64cdc795c2197dad4515c3244f40ea18f76"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x494.xml",
+      "bytes": 37862,
+      "sha256": "4e6e300f1b676ea1c187d918234e99a9e67f97a7bc28711414112636f529d1ad"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x495.xml",
+      "bytes": 33531,
+      "sha256": "61c8f7735c48f289b26acd68f266ad72dd98968823d747781068cbe39433da6f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x497.xml",
+      "bytes": 38601,
+      "sha256": "ea1682d9541cc6295d17baab432bebb02b8d0fd7266f5d7f33ac196278f22deb"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x499.xml",
+      "bytes": 199970,
+      "sha256": "b71abe8857bf5b8a52bc603fcf9deb518ccb21adbcba8091d79ad446af68d8ca"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x49A.xml",
+      "bytes": 51488,
+      "sha256": "22b5c893966bd68ec3dabf8e3ebee8fb889b8f2a0019708d44a978a5134d85cb"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x4B0.xml",
+      "bytes": 92951,
+      "sha256": "ab5338d30c5915b88ead5195ea149456b05be73c73d0f96b67b780b10e4eb529"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x4B2.xml",
+      "bytes": 56830,
+      "sha256": "49cad1a2ca4e93c40f18ddc3ce6923658b64e27ff800b55b64912d71e51eeb7d"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x500.xml",
+      "bytes": 79619,
+      "sha256": "a950476c9e94c9f1081b533c6a8199bee5850ecb8f02ee00fca6fc5938d57fe0"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x501.xml",
+      "bytes": 78445,
+      "sha256": "432cb829cee09af6860671f070fb184e2a29e7e66966cb2d2c3b82600802288d"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x503.xml",
+      "bytes": 266935,
+      "sha256": "9a5f4fb55031573138d76e8a935ea221c545630572e0d18119aad153b60aab5f"
+    },
+    {
+      "path": "Data_Base/STM32_Prog_DB_0x505.xml",
+      "bytes": 272756,
+      "sha256": "335bac6b36b032a7c15f6aa4f1484eac3a50a2bb05bfd42dcd3586f833f8436f"
+    },
+    {
+      "path": "doc/license.txt",
+      "bytes": 6202,
+      "sha256": "b57b5841754ea1115c67bf4576ba9fe4a0b325c4ff8daf85624ba8c61e91bf81"
+    },
+    {
+      "path": "doc/STM32CubeProgrammer-2.23.0-Additional-License-Terms.txt",
+      "bytes": 72330,
+      "sha256": "e39a6534c9c37e236b295ed94d3851deccde53ee72a2766a6c1abc9353951301"
+    }
+  ],
+  "excluded_source_paths": [
+    "bin/JLink_x64.dll",
+    "bin/ExternalLoader/**",
+    "doc/License_Segger_JLink.txt"
+  ]
+}

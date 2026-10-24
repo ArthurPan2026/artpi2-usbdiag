@@ -1,0 +1,13 @@
+set(USER_MODULE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../packages/wifi_profile_manager/src/wifi_profile_manager.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../packages/wifi_profile_manager/src/wpm_nv_journal.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/wifi_manager_service.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/wifi_nv_flash.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/wifi_sd_compat.c"
+    PARENT_SCOPE
+)
+set(USER_MODULE_INCLUDE_DIRS
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../packages/wifi_profile_manager/include"
+    PARENT_SCOPE
+)

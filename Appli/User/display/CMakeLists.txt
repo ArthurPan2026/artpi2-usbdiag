@@ -1,0 +1,18 @@
+set(USER_MODULE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/dma2d_broker.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/dma2d_irq_adapter.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/dma2d_service.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/gpu2d_irq_adapter.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ltdc_irq_adapter.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/lv_port_disp.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/lv_port_indev.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/lvgl_h7rs_cache.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/lvgl_mem_pool.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/lvgl_nema_port.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/touch_gt911.c"
+    PARENT_SCOPE
+)
+set(USER_MODULE_INCLUDE_DIRS
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    PARENT_SCOPE
+)

@@ -1,0 +1,34 @@
+# SPDX-License-Identifier: Apache-2.0
+menuconfig PKG_USING_USB_ENUM_DIAG
+    bool "usb_enum_diag: bounded USB enumeration rule-session core"
+    default n
+    help
+      Add an allocation-free C99 core for validating USB enumeration evidence.
+      This package does not initialize or own USB hardware.
+
+if PKG_USING_USB_ENUM_DIAG
+
+    config PKG_USB_ENUM_DIAG_PATH
+        string
+        default "/packages/peripherals/usb_enum_diag"
+
+    choice
+        prompt "Version"
+        default PKG_USING_USB_ENUM_DIAG_V010
+        help
+          Select a fixed usb_enum_diag package version.
+
+        config PKG_USING_USB_ENUM_DIAG_V010
+            bool "v0.1.0"
+    endchoice
+
+    config PKG_USB_ENUM_DIAG_VER
+        string
+        default "v0.1.0" if PKG_USING_USB_ENUM_DIAG_V010
+
+    config USB_ENUM_DIAG_BUILD_EXAMPLE
+        bool "Build the optional RT-Thread startup/MSH smoke test"
+        depends on RT_USING_COMPONENTS_INIT
+        default n
+
+endif

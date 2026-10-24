@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: Apache-2.0
+from building import *
+
+cwd = GetCurrentDir()
+src = Split('''
+src/usbdiag_core.c
+src/usbdiag_session.c
+''')
+if GetDepend('USB_ENUM_DIAG_BUILD_EXAMPLE'):
+    src += ['examples/rtthread_adapter_example.c']
+
+group = DefineGroup(
+    'usb_enum_diag',
+    src,
+    depend=['PKG_USING_USB_ENUM_DIAG'],
+    CPPPATH=[cwd + '/src'])
+
+Return('group')

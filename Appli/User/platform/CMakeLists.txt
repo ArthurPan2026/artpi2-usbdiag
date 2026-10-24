@@ -1,0 +1,9 @@
+set(USER_MODULE_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/app_hal_timebase_tim.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/i2c_hal_adapter.c"
+    PARENT_SCOPE
+)
+set(USER_MODULE_INCLUDE_DIRS
+    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    PARENT_SCOPE
+)

@@ -1,0 +1,20 @@
+# CMake build outputs
+/build/
+/Appli/build/
+/Boot/build/
+**/CMakeFiles/
+CMakeCache.txt
+build.ninja
+compile_commands.json
+cmake_install.cmake
+**/CMakeUserPresets.json
+
+# ART-Pi2 Studio local tools and settings
+/.artpi2-studio/
+
+# Local IDE and operating-system files
+.vs/
+*.user
+*.suo
+Thumbs.db
+.DS_Store

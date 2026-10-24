@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Codex bruce-drawio skill" version="32.5.5" type="device">
+  <diagram id="artpi2-evidence-flow" name="HID Evidence Flow">
+    <mxGraphModel dx="1500" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="background" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F7FB;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="1460" height="950" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="从 HID 接入到可复核证据" style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=27;fontStyle=1;fontColor=#10243B;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="48" width="1280" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Host 观测进入共享规则核心；PDF 正文取自冻结快照，实时拓扑按独立代次核对。" style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=17;fontColor=#41566B;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="96" width="1300" height="34" as="geometry" />
+        </mxCell>
+
+        <mxCell id="hid" value="真实 USB HID&#xa;设备与描述符" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#E8F6FC;strokeColor=#1684B7;strokeWidth=2;fontSize=18;fontStyle=1;fontColor=#10243B;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="205" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="host" value="CherryUSB Host&#xa;控制传输与枚举" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#FFFFFF;strokeColor=#80A3C2;strokeWidth=2;fontSize=18;fontStyle=1;fontColor=#17324F;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="260" y="205" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="observer" value="Host 观测适配&#xa;请求、响应与描述符字节" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF6FC;strokeColor=#4D98C0;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#17324F;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="500" y="205" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="queue" value="有界事件队列&#xa;采集事件与状态" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#F5F5F5;strokeColor=#6B7E90;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#17324F;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="750" y="205" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="analyzer" value="RT-Thread&#xa;分析线程" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EEF3FA;strokeColor=#527AA1;strokeWidth=2;fontSize=19;fontStyle=1;fontColor=#17324F;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="970" y="205" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rule-core" value="共享 C99 规则核心&#xa;十二项检查" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#E1D5E7;strokeColor=#9673A6;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#3F3150;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="970" y="135" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="snapshot" value="冻结会话快照&#xa;代号 · 修订号 · CRC" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF8F1;strokeColor=#31915E;strokeWidth=2;fontSize=19;fontStyle=1;fontColor=#173F2B;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="205" width="220" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="live-topology" value="实时 USB 拓扑&#xa;接口与端点描述符&#xa;独立设备代次号，不纳入快照 CRC" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#F4EFF8;strokeColor=#9673A6;strokeWidth=2;dashed=1;fontSize=16;fontStyle=1;fontColor=#3F3150;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="60" y="540" width="240" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="output-group" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#F8FBFD;strokeColor=#A9BDCE;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="485" width="1140" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="output-title" value="冻结快照的查看与导出" style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;fontColor=#10243B;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="360" y="505" width="1030" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="output-lcd" value="LCD · LVGL&#xa;阶段、描述符与&#xa;诊断摘要" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#EEF1FF;strokeColor=#6376D8;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#26366F;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="630" y="585" width="245" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="output-web" value="Web · Mongoose&#xa;HID 接入、教学与研发核验&#xa;实时 USB 拓扑与证据页" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#EAF6F7;strokeColor=#27989A;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#155C60;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="355" y="585" width="245" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="output-pdf" value="PDF · libHaru 2.4.6&#xa;正文：冻结快照&#xa;附录：代次、身份与计数核对&#xa;截断标记未单独检查&#xa;成功枚举且清单就绪后预生成" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFF7E8;strokeColor=#D29B3D;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#6E4A12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="905" y="585" width="245" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="output-json" value="完整证据 JSON&#xa;固件捕获的事件与原始字节&#xa;附带长度、CRC 与丢弃计数" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#EAF8F1;strokeColor=#58A879;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#215C3A;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="585" width="245" height="180" as="geometry" />
+        </mxCell>
+
+        <mxCell id="footer-note" value="PDF 拓扑附录核对代次、身份和计数，不单独检查截断标记。JSON 是有界采集，不是 USB 总线级全量抓包。" style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#52677D;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="910" width="1360" height="28" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge-device-host" value="USB" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1684B7;strokeWidth=3;endArrow=block;endFill=1;fontSize=15;fontStyle=1;fontColor=#166B91;fontFamily=Microsoft YaHei;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hid" target="host">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-host-observer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1684B7;strokeWidth=3;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="host" target="observer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-observer-queue" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1684B7;strokeWidth=3;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="observer" target="queue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-queue-analyzer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1684B7;strokeWidth=3;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="queue" target="analyzer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-analyzer-core" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673A6;strokeWidth=2;startArrow=block;startFill=1;endArrow=block;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="analyzer" target="rule-core">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-analyzer-snapshot" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#31915E;strokeWidth=3;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="analyzer" target="snapshot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-snapshot-output" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#31915E;strokeWidth=3;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.85;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="snapshot" target="output-group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-observer-live-topology" value="实时描述符清单" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673A6;strokeWidth=2;dashed=1;endArrow=block;endFill=1;fontSize=14;fontStyle=1;fontColor=#705492;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="observer" target="live-topology">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-live-web" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673A6;strokeWidth=2;dashed=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="live-topology" target="output-web">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-live-pdf" value="附页校验" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673A6;strokeWidth=2;dashed=1;endArrow=block;endFill=1;fontSize=13;fontStyle=1;fontColor=#705492;fontFamily=Microsoft YaHei;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="live-topology" target="output-pdf">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="830" />
+              <mxPoint x="1027" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: Apache-2.0
+from building import *
+
+cwd = GetCurrentDir()
+src = ['src/watchdog_record.c', 'src/watchdog_trace.c']
+if GetDepend('PKG_USING_WATCHDOG_CRASHLOG_RTT_SUPERVISOR'):
+    src += ['src/watchdog_rtt_supervisor.c']
+
+group = DefineGroup(
+    'watchdog_crashlog',
+    src,
+    depend=['PKG_USING_WATCHDOG_CRASHLOG'],
+    CPPPATH=[cwd + '/include'])
+
+Return('group')

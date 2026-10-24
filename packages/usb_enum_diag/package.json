@@ -1,0 +1,24 @@
+{
+  "name": "usb_enum_diag",
+  "description": "Bounded, allocation-free USB enumeration rule-session validation core for RT-Thread.",
+  "description_zh": "面向 RT-Thread 的有界、无动态分配 USB 枚举规则会话判定核心。",
+  "enable": "PKG_USING_USB_ENUM_DIAG",
+  "keywords": [
+    "usb",
+    "enumeration",
+    "descriptor",
+    "diagnostics",
+    "C99"
+  ],
+  "category": "peripherals",
+  "license": "Apache-2.0",
+  "repository": "PENDING_PUBLIC_REPOSITORY_URL",
+  "homepage": "PENDING_PUBLIC_PROJECT_URL",
+  "site": [
+    {
+      "version": "v0.1.0",
+      "URL": "PENDING_PUBLIC_V0_1_0_ARCHIVE_URL",
+      "filename": "usb_enum_diag-v0.1.0.zip"
+    }
+  ]
+}

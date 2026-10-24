@@ -1,0 +1,14 @@
+{
+  "name": "programmer",
+  "version": "2.23.0",
+  "platform": "x86_64-windows",
+  "licenses": [
+    "SLA0048 Rev6/February 2026",
+    "Additional License Terms for STM32CubeProgrammer 2.23.0"
+  ],
+  "license_files": [
+    "doc/license.txt",
+    "doc/STM32CubeProgrammer-2.23.0-Additional-License-Terms.txt"
+  ],
+  "packaging": "ART-Pi2 pre-expanded CLI runtime; optional J-Link library and bundled external loaders omitted."
+}

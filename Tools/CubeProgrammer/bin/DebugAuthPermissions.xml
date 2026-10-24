@@ -1,0 +1,105 @@
+<DebugAuthPermissions>
+	<STM32H5-2M_0484>
+		<Permission>14,Full Regression</Permission>
+		<Permission>12,To TZ Regression</Permission>
+		<Permission>6,Level 3 Intrusive Debug</Permission>
+		<Permission>5,Level 2 Intrusive Debug</Permission>
+		<Permission>4,Level 1 Intrusive Debug</Permission>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32H5-2M_0484>
+	<STM32H5-128k_0474>
+		<Permission>14,Full Regression</Permission>
+	</STM32H5-128k_0474>
+	<STM32H7R-S_0485>
+		<Permission>14,Full Regression</Permission>
+		<Permission>2,Level 3 Intrusive Debug</Permission>
+		<Permission>1,Level 2 Intrusive Debug</Permission>
+		<Permission>0,Level 1 Intrusive Debug</Permission>
+		<Feature>127,Forced Download</Feature>
+	</STM32H7R-S_0485>
+	<STM32H5-512k_0478>
+		<Permission>14,Full Regression</Permission>
+		<Permission>12,To TZ Regression</Permission>
+		<Permission>6,Level 3 Intrusive Debug</Permission>
+		<Permission>5,Level 2 Intrusive Debug</Permission>
+		<Permission>4,Level 1 Intrusive Debug</Permission>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32H5-512k_0478>
+	<STM32N6_0486>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32N6_0486>
+	<STM32H5-4M_047A>
+		<Permission>14,Full Regression</Permission>
+		<Permission>12,To TZ Regression</Permission>
+		<Permission>6,Level 3 Intrusive Debug</Permission>
+		<Permission>5,Level 2 Intrusive Debug</Permission>
+		<Permission>4,Level 1 Intrusive Debug</Permission>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32H5-4M_047A>
+	<STM32V8-4M_0499>
+		<Permission>126,Dry Run</Permission>
+		<Permission>29,HDPL3 Action6</Permission>
+		<Permission>28,HDPL3 Action5</Permission>
+		<Permission>27,HDPL3 Action4</Permission>
+		<Permission>26,HDPL3 Action3</Permission>
+		<Permission>25,HDPL3 Action2</Permission>
+		<Permission>24,HDPL3 Action1</Permission>
+		<Permission>22,HDPL2 Action3</Permission>
+		<Permission>21,HDPL2 Action2</Permission>
+		<Permission>20,HDPL2 Action1</Permission>
+		<Permission>18,HDPL1 Action3</Permission>
+		<Permission>17,HDPL1 Action2</Permission>
+		<Permission>16,HDPL1 Action1</Permission>
+		<Permission>14,Full Regression</Permission>
+		<Permission>12,To TZ Regression</Permission>
+		<Permission>6,Level 3 Intrusive Debug</Permission>
+		<Permission>5,Level 2 Intrusive Debug</Permission>
+		<Permission>4,Level 1 Intrusive Debug</Permission>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32V8-4M_0499>
+	<STM32G5-512k_044A>
+		<Permission>126,Dry Run</Permission>
+		<Permission>14,Full Regression</Permission>
+		<Permission>12,To TZ Regression</Permission>
+		<Permission>6,Level 3 Intrusive Debug</Permission>
+		<Permission>5,Level 2 Intrusive Debug</Permission>
+		<Permission>4,Level 1 Intrusive Debug</Permission>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32G5-512k_044A>
+	<STM32G5-256k_044B>
+		<Permission>126,Dry Run</Permission>
+		<Permission>14,Full Regression</Permission>
+		<Permission>12,To TZ Regression</Permission>
+		<Permission>6,Level 3 Intrusive Debug</Permission>
+		<Permission>5,Level 2 Intrusive Debug</Permission>
+		<Permission>4,Level 1 Intrusive Debug</Permission>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32G5-256k_044B>
+	<STM32H5-1M_047C>
+		<Permission>14,Full Regression</Permission>
+		<Permission>12,To TZ Regression</Permission>
+		<Permission>6,Level 3 Intrusive Debug</Permission>
+		<Permission>5,Level 2 Intrusive Debug</Permission>
+		<Permission>4,Level 1 Intrusive Debug</Permission>
+		<Permission>2,Level 3 Intrusive Non Secure Debug</Permission>
+		<Permission>1,Level 2 Intrusive Non Secure Debug</Permission>
+		<Permission>0,Level 1 Intrusive Non Secure Debug</Permission>
+	</STM32H5-1M_047C>
+	<STM32H7P-2M_047B>
+		<Permission>14,Full Regression</Permission>
+	</STM32H7P-2M_047B>
+</DebugAuthPermissions>

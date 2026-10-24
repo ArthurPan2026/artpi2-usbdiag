@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:,">
+  <title>ART-Pi2 · USB 枚举实验台</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到证据内容</a>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">↔</span>
+        <div>
+          <p class="eyebrow">ART-Pi2 · USB HOST</p>
+          <h1>枚举可视化与规则诊断</h1>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span id="connection-pill" class="pill pill-muted" role="status">页面启动中</span>
+        <button id="refresh-button" class="button button-quiet" type="button">刷新</button>
+        <button id="export-button" class="button button-primary" type="button">导出完整证据</button>
+        <button id="pdf-button" class="button button-accent" type="button">生成并预览 PDF</button>
+      </div>
+    </header>
+
+    <div id="boot-warning" class="connection-warning" role="status" aria-live="polite" hidden></div>
+    <div id="connection-warning" class="connection-warning" role="status" hidden></div>
+    <div id="pdf-progress" class="pdf-progress" role="status" aria-live="polite" hidden></div>
+
+    <nav class="mode-tabs" aria-label="证据视图">
+      <button id="mode-usb" class="mode-tab is-active" type="button" aria-pressed="true">HID 接入</button>
+      <button id="mode-engineer" class="mode-tab" type="button" aria-pressed="false">研发核验</button>
+      <button id="mode-learn" class="mode-tab" type="button" aria-pressed="false">教学导览</button>
+      <span class="mode-hint">接入结构 · 原始证据 · 枚举教学</span>
+    </nav>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="headline">
+        <div class="hero-main">
+          <p class="eyebrow">当前设备与会话</p>
+          <h2 id="headline" class="headline" aria-live="polite">正在启动核验界面</h2>
+          <p id="verdict-detail" class="hero-explain">页面模块加载后将自动读取当前 USB Host 快照。</p>
+          <div class="device-line">
+            <strong id="device-name">尚无设备</strong>
+            <span id="device-ids">VID:PID --:--</span>
+            <span id="device-speed">速度待确认</span>
+          </div>
+          <div class="serial-line"><span>设备序列号：</span><span id="device-serial">已隐藏</span>
+            <button id="serial-toggle" class="text-button" type="button" hidden>显示</button>
+          </div>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric"><span>采集完整性</span><strong id="integrity-value">等待证据</strong></div>
+          <div class="metric"><span>规则结果</span><strong id="rule-counts">-- / 12</strong></div>
+          <div class="metric"><span>会话 / 修订</span><strong id="session-revision">-- / --</strong></div>
+          <p id="last-sync" class="small-note">Host 软件观测时间 · 暂无快照</p>
+        </div>
+      </section>
+
+      <section id="usb-view" class="mode-view" aria-label="HID 接入">
+        <div class="usb-toolbar panel">
+          <div>
+            <p class="eyebrow">当前 USB Host 清单</p>
+            <h2 id="usb-device-title">页面启动中</h2>
+            <p id="usb-device-meta" class="small-note">页面启动后将读取接口、端点与描述符完整性。</p>
+          </div>
+          <div class="usb-toolbar-actions">
+            <span id="usb-generation" class="pill pill-muted">代次 --</span>
+            <button id="usb-refresh-button" class="button button-quiet" type="button">刷新拓扑</button>
+          </div>
+        </div>
+        <div id="usb-topology-status" class="usb-topology-status" role="status" aria-live="polite" hidden></div>
+        <div id="usb-topology-summary" class="usb-summary-grid"></div>
+        <section class="panel topology-panel" aria-labelledby="usb-interfaces-title">
+          <div class="section-heading"><div><p class="eyebrow">HID 接口与端点</p><h2 id="usb-interfaces-title">主机接入结构</h2></div>
+            <span id="usb-interface-count" class="small-note">等待清单</span></div>
+          <div id="usb-interface-list" class="usb-interface-list"></div>
+        </section>
+        <section class="panel topology-panel" aria-labelledby="usb-strings-title">
+          <div class="section-heading"><div><p class="eyebrow">字符串描述符</p><h2 id="usb-strings-title">设备文本信息</h2></div>
+            <span id="usb-string-count" class="small-note">等待清单</span></div>
+          <div id="usb-string-list" class="usb-string-list"></div>
+        </section>
+        <details class="panel topology-panel" id="usb-raw-descriptors">
+          <summary>原始设备与配置描述符</summary>
+          <p class="small-note">原始字节按当前 USB 代次读取；代次变化或字节校验失败时会丢弃本次结果。</p>
+          <div id="usb-descriptor-list" class="usb-descriptor-list"></div>
+        </details>
+        <p class="small-note usb-boundary">这里显示 USB Host 观察到的描述符与驱动绑定状态；它不表示已验证 HID 输入报告收发。</p>
+      </section>
+
+      <section id="learn-view" class="mode-view" aria-label="教学导览">
+        <section class="journey panel" aria-labelledby="journey-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">枚举路径</p><h2 id="journey-title">设备是怎样被识别的？</h2></div>
+            <span id="journey-caption" class="small-note">选择一步查看请求、响应与证据</span>
+          </div>
+          <ol id="timeline" class="timeline" aria-label="USB Host 枚举阶段"></ol>
+        </section>
+        <div class="learn-grid">
+          <article class="panel step-panel">
+            <p class="eyebrow">当前所选阶段</p>
+            <h2 id="step-title">选择枚举步骤</h2>
+            <p id="step-explain" class="explain">从上方流程选择一步，沿着 Host 请求与设备响应追溯结论。</p>
+            <div class="exchange" aria-label="Host 请求与设备结果">
+              <div class="exchange-side host-side"><span>HOST 请求</span><strong id="host-action">等待事件</strong></div>
+              <span class="exchange-arrow" aria-hidden="true">→</span>
+              <div class="exchange-side device-side"><span>DEVICE 结果</span><strong id="device-result">等待事件</strong></div>
+            </div>
+            <p id="step-time" class="small-note">时间来自 Host 软件观测，不代表 USB 总线硬件时序。</p>
+          </article>
+
+          <article class="panel explanation-panel">
+            <p class="eyebrow">怎样得出结论</p>
+            <h2 id="selected-rule-title">等待规则结果</h2>
+            <p id="rule-meaning" class="explain">选择流程或规则后，显示本次判定的依据。</p>
+            <dl class="judgement">
+              <div><dt>期望</dt><dd id="rule-expected">--</dd></div>
+              <div><dt>实测</dt><dd id="rule-observed">--</dd></div>
+              <div><dt>依据</dt><dd id="rule-clause">--</dd></div>
+            </dl>
+            <button id="jump-evidence" class="button button-outline" type="button">定位原始证据</button>
+          </article>
+
+          <article class="panel proof-panel">
+            <p class="eyebrow">可核查的来源</p>
+            <h2>原始字节</h2>
+            <p id="proof-reference" class="small-note">等待事件引用</p>
+            <div id="learn-hex" class="hex-view" aria-label="所选事件的原始字节"></div>
+            <p id="proof-status" class="small-note">只有实际捕获的字节才会出现在这里。</p>
+          </article>
+        </div>
+
+        <section class="panel rule-overview" aria-labelledby="overview-title">
+          <div class="section-heading"><div><p class="eyebrow">十二条规则</p><h2 id="overview-title">本次检查了什么</h2></div>
+            <span class="small-note">点选规则可追溯到请求和字节</span></div>
+          <div id="rule-overview" class="rule-chips"></div>
+        </section>
+
+        <details id="teaching-tasks" class="panel teaching-tasks">
+          <summary>教学核验任务 · 4 项 · 仅按当前冻结证据判题</summary>
+          <p class="small-note">每次证据代号变化都会重置答题；证据不充分时会标记“无法作答”，不会猜测。</p>
+          <div id="task-list" class="task-grid"></div>
+        </details>
+      </section>
+
+      <section id="engineer-view" class="mode-view" aria-label="研发核验" hidden>
+        <div class="engineer-toolbar panel">
+          <label>查找事件或描述符<input id="search-input" type="search" placeholder="请求号、字段名、事件序号" autocomplete="off"></label>
+          <label>事件类型<select id="event-filter"><option value="all">全部事件</option><option value="CONTROL_TRANSFER">控制传输</option><option value="PORT_RESET">端口复位</option><option value="ENUMERATION_COMPLETE">枚举完成</option><option value="DISCONNECT">设备断开</option></select></label>
+          <label>规则判定<select id="rule-filter"><option value="all">全部判定</option><option value="FAIL">FAIL</option><option value="NOT_OBSERVED">未观察</option><option value="PASS">PASS</option><option value="NOT_APPLICABLE">不适用</option></select></label>
+        </div>
+        <div class="engineer-grid">
+          <section class="panel list-panel" aria-labelledby="events-title"><div class="section-heading"><h2 id="events-title">Host 事件</h2><span id="event-count" class="small-note">0 条</span></div><div id="event-list" class="scroll-list"></div></section>
+          <div class="engineer-middle">
+            <section class="panel list-panel" aria-labelledby="rules-title"><div class="section-heading"><h2 id="rules-title">规则与结论</h2><span id="rules-count" class="small-note">0 条</span></div><div id="rule-list" class="scroll-list"></div></section>
+            <section class="panel list-panel" aria-labelledby="tree-title"><div class="section-heading"><h2 id="tree-title">描述符树</h2><span id="node-count" class="small-note">0 节点</span></div><div id="descriptor-tree" class="scroll-list"></div></section>
+          </div>
+          <section class="panel inspector" aria-labelledby="inspector-title"><p class="eyebrow">事件与字段检查器</p><h2 id="inspector-title">选择一条事件</h2>
+            <p id="inspector-note" class="small-note">规则、描述符和字节引用会联动定位到这里。</p>
+            <div id="inspector-rule" class="rule-evidence"></div>
+            <dl id="request-fields" class="request-fields"></dl>
+            <h3>响应字节</h3><p id="inspector-reference" class="small-note">暂无引用</p>
+            <div id="inspector-hex" class="hex-view" aria-label="事件原始字节"></div>
+            <div class="hex-nav"><button id="hex-prev" class="button button-quiet" type="button">上一段</button>
+              <span id="hex-window" class="small-note">尚无字节</span>
+              <button id="hex-next" class="button button-quiet" type="button">下一段</button></div>
+          </section>
+        </div>
+      </section>
+
+      <div class="bottom-details">
+        <details id="history-panel" class="panel"><summary>最近会话摘要</summary><p class="small-note">这里不保存历史原始字节，无法把摘要当作完整证据。</p><div id="history-list"></div></details>
+        <details class="panel"><summary>版本与快照校验</summary><pre id="manifest-details" class="manifest-code">等待 manifest</pre><p id="build-info" class="small-note">生成 PDF 时读取构建身份；它不会阻塞页面和 USB 证据显示。</p></details>
+      </div>
+    </main>
+
+    <footer>数据来源：开发板 USB Host 软件观测。规则结论须连同捕获完整性与原始字节一起阅读。</footer>
+  </div>
+  <script>
+    (() => {
+      const warning = document.getElementById("boot-warning");
+      const refresh = document.getElementById("refresh-button");
+      let watchdogTimer = null;
+      let fallbackRefresh = null;
+      let failureShown = false;
+
+      function setVisibleFailure(error) {
+        failureShown = true;
+        const pill = document.getElementById("connection-pill");
+        pill.className = "pill pill-bad";
+        pill.textContent = "页面脚本未启动";
+        document.getElementById("headline").textContent = "页面初始化失败";
+        document.getElementById("verdict-detail").textContent =
+          "页面脚本未能完成加载，USB 证据尚未开始读取。";
+        document.getElementById("usb-device-title").textContent = "等待页面恢复";
+        document.getElementById("usb-device-meta").textContent =
+          "页面恢复后将重新读取接口、端点与描述符完整性。";
+        const topology = document.getElementById("usb-topology-status");
+        topology.hidden = false;
+        topology.className = "usb-topology-status is-warning";
+        topology.textContent = "页面尚未完成启动，接口、端点和描述符读取还未开始。";
+        warning.hidden = false;
+        warning.textContent =
+          `页面资源加载失败${error?.message ? `：${error.message}` : ""}。页面不会自动刷新；点击“刷新”后重试。`;
+        refresh.textContent = "刷新";
+        fallbackRefresh = () => location.reload();
+        refresh.addEventListener("click", fallbackRefresh, { once: true });
+      }
+
+      const appLoad = import("/assets/app.js");
+      appLoad.then(() => {
+        if (watchdogTimer !== null) clearTimeout(watchdogTimer);
+        if (fallbackRefresh) refresh.removeEventListener("click", fallbackRefresh);
+        refresh.textContent = "刷新";
+        if (failureShown) warning.hidden = true;
+        if (document.hidden) {
+          document.getElementById("connection-pill").textContent = "页面已启动，等待前台";
+          document.getElementById("headline").textContent = "等待页面回到前台";
+          document.getElementById("verdict-detail").textContent =
+            "当前标签页处于后台；切回此页后会立即读取 USB Host 证据。";
+          document.getElementById("usb-device-title").textContent = "等待前台读取";
+        }
+      }, () => {});
+
+      const watchdog = new Promise((resolve, reject) => {
+        watchdogTimer = setTimeout(() => reject(new Error("页面脚本加载超过 6 秒")), 6000);
+      });
+      Promise.race([appLoad, watchdog]).catch(error => {
+        setVisibleFailure(error);
+      });
+    })();
+  </script></body>
+</html>

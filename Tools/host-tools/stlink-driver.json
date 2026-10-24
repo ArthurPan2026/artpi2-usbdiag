@@ -1,0 +1,148 @@
+{
+  "format_version": 1,
+  "id": "stsw-link009",
+  "version": "2.02",
+  "source_url": "https://www.st.com/en/development-tools/stsw-link009.html",
+  "archive_file": "stsw-link009.zip",
+  "archive_format": "zip",
+  "archive_bytes": 5329298,
+  "archive_sha256": "df015c7760f974e9da0f4c5a098d62c72157ea45cd0e80694eb47ab7ef28352b",
+  "install_inf_paths": [
+    "stlink_dbg_winusb.inf",
+    "stlink_VCP.inf",
+    "stlink_bridge_winusb.inf"
+  ],
+  "x64_catalog_paths": [
+    "stlinkdbgwinusb_x64.cat",
+    "stlinkvcp_x64.cat",
+    "stlinkbridgewinusb_x64.cat"
+  ],
+  "hardware_ids": [
+    "USB\\VID_0483&PID_3748",
+    "USB\\VID_0483&PID_374A&MI_00",
+    "USB\\VID_0483&PID_374A&MI_01",
+    "USB\\VID_0483&PID_374A&MI_02",
+    "USB\\VID_0483&PID_374B&MI_00",
+    "USB\\VID_0483&PID_374B&MI_02",
+    "USB\\VID_0483&PID_374D",
+    "USB\\VID_0483&PID_374E&MI_00",
+    "USB\\VID_0483&PID_374E&MI_02",
+    "USB\\VID_0483&PID_374F&MI_00",
+    "USB\\VID_0483&PID_374F&MI_02",
+    "USB\\VID_0483&PID_374F&MI_04",
+    "USB\\VID_0483&PID_3752&MI_00",
+    "USB\\VID_0483&PID_3752&MI_01",
+    "USB\\VID_0483&PID_3753&MI_00",
+    "USB\\VID_0483&PID_3753&MI_01",
+    "USB\\VID_0483&PID_3753&MI_03",
+    "USB\\VID_0483&PID_3753&MI_04",
+    "USB\\VID_0483&PID_3754&MI_00",
+    "USB\\VID_0483&PID_3754&MI_01",
+    "USB\\VID_0483&PID_3755",
+    "USB\\VID_0483&PID_3757&MI_00",
+    "USB\\VID_0483&PID_3757&MI_01",
+    "USB\\VID_0483&PID_3757&MI_03",
+    "USB\\VID_0483&PID_3757&MI_04"
+  ],
+  "files": [
+    {
+      "path": "amd64/WdfCoInstaller01009.dll",
+      "bytes": 1721576,
+      "sha256": "18487b4ff94edccc98ed59d9fca662d4a1331c5f1e14df8db3093256dd9f1c3e"
+    },
+    {
+      "path": "amd64/winusbcoinstaller2.dll",
+      "bytes": 1002728,
+      "sha256": "981a17effddbc20377512ddaec9f22c2b7067e17a3e2a8ccf82bb7bb7b2420b6"
+    },
+    {
+      "path": "dpinst_amd64.exe",
+      "bytes": 680440,
+      "sha256": "b6bae3bb8fe8dee5db004965bbea0466bab7bb4b4193e8fa544abf47f03562a5"
+    },
+    {
+      "path": "dpinst_x86.exe",
+      "bytes": 552328,
+      "sha256": "0af038b08f84604d2805202b5429210c5ef37f23623b8dae2bd8921e4e76a0c8"
+    },
+    {
+      "path": "readme.txt",
+      "bytes": 364,
+      "sha256": "9565b5815bcadab8a8cabf9c1a5b0fe277ae62e961ffec3a1d800514a2b02cf8"
+    },
+    {
+      "path": "stlinkbridgewinusb_x64.cat",
+      "bytes": 12339,
+      "sha256": "25093d0fd0a51a5b735d5da236fbb38704e4eeb5c035c5ba79cf94cf45080daf"
+    },
+    {
+      "path": "stlinkbridgewinusb_x86.cat",
+      "bytes": 12338,
+      "sha256": "cf93d88b9e7b84bce01db9ae5ff62d5390aa18538cf895773e7c4765dbb83cc9"
+    },
+    {
+      "path": "stlinkdbgwinusb_x64.cat",
+      "bytes": 12332,
+      "sha256": "57dddb5f1b4e7b22d0ed2d37fc31e06bcee0ae5d956975693550563d347638a0"
+    },
+    {
+      "path": "stlinkdbgwinusb_x86.cat",
+      "bytes": 12332,
+      "sha256": "5de4ab39be95d4064b10e668d9a6c23589c6fc104743b2868be6a92a08ee37f3"
+    },
+    {
+      "path": "stlinkvcp_x64.cat",
+      "bytes": 10694,
+      "sha256": "0e8510316270a5a46fd925b2b01d2c104406d4c98f42d2f2000a5e90257bf9e5"
+    },
+    {
+      "path": "stlinkvcp_x86.cat",
+      "bytes": 10695,
+      "sha256": "c0e7ea851bba63a840eb52fccd7966adfef9a54eedb5d96850eee02d91ba3782"
+    },
+    {
+      "path": "stlink_bridge_winusb.inf",
+      "bytes": 2965,
+      "sha256": "3a97705bc06a90e90cc12224127d2838f21fb2954c1b6b14314cc7937469e270"
+    },
+    {
+      "path": "stlink_dbg_winusb.inf",
+      "bytes": 4715,
+      "sha256": "8f4fc247f28503300cef0e4fd2ba1ff87ecb35790a152da072f8c8451255bd61"
+    },
+    {
+      "path": "stlink_VCP.inf",
+      "bytes": 2915,
+      "sha256": "a7faff1014716865e5d7458977ac94b95295108558fee0c830f984f23942c33d"
+    },
+    {
+      "path": "stlink_winusb_install.bat",
+      "bytes": 624,
+      "sha256": "3cac4f4ff8291d7a86b6f1bfc0c396915f62a8d24f7b7ffe0c8895f01aa6c5f5"
+    },
+    {
+      "path": "stlink_winusb_install_quiet.bat",
+      "bytes": 630,
+      "sha256": "b889f7d38740188e46beab9029cae4c035f47be36cdeee89e5f8332e9c0ec95e"
+    },
+    {
+      "path": "x86/WdfCoInstaller01009.dll",
+      "bytes": 1461992,
+      "sha256": "7a6bf1f950684381205c717a51af2d9c81b203cb1f3db0006a4602e2df675c77"
+    },
+    {
+      "path": "x86/winusbcoinstaller2.dll",
+      "bytes": 851176,
+      "sha256": "ebe3b7708dd974ee87efed3113028d266af87ca8dbae77c47c6f7612824d3d6c"
+    }
+  ],
+  "package_license_paths": [
+    "licenses/STSW-LINK009-SLA0048.txt"
+  ],
+  "license_document": {
+    "path": "licenses/STSW-LINK009-SLA0048.txt",
+    "bytes": 5549,
+    "sha256": "704a3788d4ab8415c7a24c24f2b2c829f7e21677b185344ed3a91442e09f0168",
+    "source": "SLA0048 Rev4/March 2018, also supplied with the locked STM32CubeProgrammer bundle"
+  }
+}
